@@ -6,135 +6,187 @@
         <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="1" lineNum="11" parent="globals/RehoboamView" pc="268435460" symbol="initialize"/>
         <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="1" lineNum="12" parent="globals/RehoboamView" pc="268435478" symbol="initialize"/>
         <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="2" lineNum="16" parent="globals/RehoboamView" pc="268435509" symbol="onLayout"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="3" lineNum="22" parent="globals/RehoboamView" pc="268435514" symbol="onShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="3" lineNum="23" parent="globals/RehoboamView" pc="268435518" symbol="onShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="3" lineNum="24" parent="globals/RehoboamView" pc="268435538" symbol="onShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="4" lineNum="30" parent="globals/RehoboamView" pc="268435557" symbol="onHide"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="4" lineNum="31" parent="globals/RehoboamView" pc="268435561" symbol="onHide"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="35" parent="globals/RehoboamView" pc="268435582" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="36" parent="globals/RehoboamView" pc="268435586" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="37" parent="globals/RehoboamView" pc="268435603" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="38" parent="globals/RehoboamView" pc="268435620" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="40" parent="globals/RehoboamView" pc="268435630" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="41" parent="globals/RehoboamView" pc="268435642" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="42" parent="globals/RehoboamView" pc="268435658" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="43" parent="globals/RehoboamView" pc="268435669" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="47" parent="globals/RehoboamView" pc="268435682" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="52" parent="globals/RehoboamView" pc="268435780" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="53" parent="globals/RehoboamView" pc="268435784" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="54" parent="globals/RehoboamView" pc="268435812" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="55" parent="globals/RehoboamView" pc="268435825" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="58" parent="globals/RehoboamView" pc="268435838" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="59" parent="globals/RehoboamView" pc="268435851" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="60" parent="globals/RehoboamView" pc="268435887" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="62" parent="globals/RehoboamView" pc="268435899" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="63" parent="globals/RehoboamView" pc="268435935" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="69" parent="globals/RehoboamView" pc="268436003" symbol="onUpdate"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="73" parent="globals/RehoboamView" pc="268436007" symbol="onUpdate"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="74" parent="globals/RehoboamView" pc="268436043" symbol="onUpdate"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="76" parent="globals/RehoboamView" pc="268436055" symbol="onUpdate"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="77" parent="globals/RehoboamView" pc="268436073" symbol="onUpdate"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="8" lineNum="82" parent="globals/RehoboamView" pc="268436075" symbol="onExitSleep"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="8" lineNum="83" parent="globals/RehoboamView" pc="268436079" symbol="onExitSleep"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="9" lineNum="87" parent="globals/RehoboamView" pc="268436098" symbol="onEnterSleep"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="9" lineNum="88" parent="globals/RehoboamView" pc="268436102" symbol="onEnterSleep"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="10" lineNum="6" parent="globals/RehoboamView" pc="268437986" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="10" lineNum="6" parent="globals/RehoboamView" pc="268437986" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="12" lineNum="11" parent="globals/RehoboamAnimationController" pc="268436121" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="12" lineNum="12" parent="globals/RehoboamAnimationController" pc="268436125" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="12" lineNum="13" parent="globals/RehoboamAnimationController" pc="268436135" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="12" lineNum="14" parent="globals/RehoboamAnimationController" pc="268436145" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="17" parent="globals/RehoboamAnimationController" pc="268436178" symbol="handleOnShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="18" parent="globals/RehoboamAnimationController" pc="268436182" symbol="handleOnShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="19" parent="globals/RehoboamAnimationController" pc="268436192" symbol="handleOnShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="21" parent="globals/RehoboamAnimationController" pc="268436208" symbol="handleOnShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="30" parent="globals/RehoboamAnimationController" pc="268436294" symbol="handleOnShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="32" parent="globals/RehoboamAnimationController" pc="268436313" symbol="handleOnShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="33" parent="globals/RehoboamAnimationController" pc="268436339" symbol="handleOnShow"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="38" parent="globals/RehoboamAnimationController" pc="268436369" symbol="handleOnHide"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="39" parent="globals/RehoboamAnimationController" pc="268436373" symbol="handleOnHide"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="40" parent="globals/RehoboamAnimationController" pc="268436385" symbol="handleOnHide"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="41" parent="globals/RehoboamAnimationController" pc="268436394" symbol="handleOnHide"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="45" parent="globals/RehoboamAnimationController" pc="268436404" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="46" parent="globals/RehoboamAnimationController" pc="268436408" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="48" parent="globals/RehoboamAnimationController" pc="268436427" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="49" parent="globals/RehoboamAnimationController" pc="268436458" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="51" parent="globals/RehoboamAnimationController" pc="268436474" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="60" parent="globals/RehoboamAnimationController" pc="268436577" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="61" parent="globals/RehoboamAnimationController" pc="268436607" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="16" lineNum="64" parent="globals/RehoboamAnimationController" pc="268436611" symbol="getTextLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="16" lineNum="65" parent="globals/RehoboamAnimationController" pc="268436615" symbol="getTextLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="17" lineNum="68" parent="globals/RehoboamAnimationController" pc="268436625" symbol="getNeedPlaying"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="17" lineNum="69" parent="globals/RehoboamAnimationController" pc="268436629" symbol="getNeedPlaying"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="72" parent="globals/RehoboamAnimationController" pc="268436639" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="73" parent="globals/RehoboamAnimationController" pc="268436643" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="75" parent="globals/RehoboamAnimationController" pc="268436655" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="76" parent="globals/RehoboamAnimationController" pc="268436678" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="79" parent="globals/RehoboamAnimationController" pc="268436735" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="82" parent="globals/RehoboamAnimationController" pc="268436748" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="84" parent="globals/RehoboamAnimationController" pc="268436771" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="85" parent="globals/RehoboamAnimationController" pc="268436789" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="86" parent="globals/RehoboamAnimationController" pc="268436815" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="87" parent="globals/RehoboamAnimationController" pc="268436841" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="90" parent="globals/RehoboamAnimationController" pc="268436898" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="94" parent="globals/RehoboamAnimationController" pc="268436910" symbol="play"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="99" parent="globals/RehoboamAnimationController" pc="268436921" symbol="stop"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="100" parent="globals/RehoboamAnimationController" pc="268436925" symbol="stop"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="101" parent="globals/RehoboamAnimationController" pc="268436936" symbol="stop"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="102" parent="globals/RehoboamAnimationController" pc="268436954" symbol="stop"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="103" parent="globals/RehoboamAnimationController" pc="268436964" symbol="stop"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="107" parent="globals/RehoboamAnimationController" pc="268436978" symbol="updateTimeLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="108" parent="globals/RehoboamAnimationController" pc="268436982" symbol="updateTimeLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="109" parent="globals/RehoboamAnimationController" pc="268437001" symbol="updateTimeLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="110" parent="globals/RehoboamAnimationController" pc="268437014" symbol="updateTimeLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="113" parent="globals/RehoboamAnimationController" pc="268437027" symbol="updateTimeLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="114" parent="globals/RehoboamAnimationController" pc="268437040" symbol="updateTimeLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="115" parent="globals/RehoboamAnimationController" pc="268437080" symbol="updateTimeLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="117" parent="globals/RehoboamAnimationController" pc="268437092" symbol="updateTimeLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="118" parent="globals/RehoboamAnimationController" pc="268437132" symbol="updateTimeLayer"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="122" parent="globals/RehoboamAnimationController" pc="268437206" symbol="getTimeString"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="123" parent="globals/RehoboamAnimationController" pc="268437210" symbol="getTimeString"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="124" parent="globals/RehoboamAnimationController" pc="268437229" symbol="getTimeString"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="125" parent="globals/RehoboamAnimationController" pc="268437248" symbol="getTimeString"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="127" parent="globals/RehoboamAnimationController" pc="268437258" symbol="getTimeString"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="128" parent="globals/RehoboamAnimationController" pc="268437270" symbol="getTimeString"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="129" parent="globals/RehoboamAnimationController" pc="268437286" symbol="getTimeString"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="130" parent="globals/RehoboamAnimationController" pc="268437297" symbol="getTimeString"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="134" parent="globals/RehoboamAnimationController" pc="268437310" symbol="getTimeString"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="3" parent="globals/RehoboamAnimationController" pc="268437966" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="24" lineNum="7" parent="globals/westworldApp" pc="268437410" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="24" lineNum="8" parent="globals/westworldApp" pc="268437414" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="25" lineNum="12" parent="globals/westworldApp" pc="268437433" symbol="onStart"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="26" lineNum="16" parent="globals/westworldApp" pc="268437438" symbol="onStop"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="27" lineNum="20" parent="globals/westworldApp" pc="268437443" symbol="getInitialView"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="27" lineNum="21" parent="globals/westworldApp" pc="268437447" symbol="getInitialView"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="27" lineNum="22" parent="globals/westworldApp" pc="268437477" symbol="getInitialView"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="28" lineNum="4" parent="globals/westworldApp" pc="268437967" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="28" lineNum="4" parent="globals/westworldApp" pc="268437967" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="30" lineNum="10" parent="globals/RehoboamAnimationDelegate" pc="268437501" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="30" lineNum="11" parent="globals/RehoboamAnimationDelegate" pc="268437505" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="30" lineNum="12" parent="globals/RehoboamAnimationDelegate" pc="268437528" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="30" lineNum="13" parent="globals/RehoboamAnimationDelegate" pc="268437546" symbol="initialize"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="31" lineNum="18" parent="globals/RehoboamAnimationDelegate" pc="268437557" symbol="onAnimationEvent"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="31" lineNum="19" parent="globals/RehoboamAnimationDelegate" pc="268437561" symbol="onAnimationEvent"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="31" lineNum="21" parent="globals/RehoboamAnimationDelegate" pc="268437602" symbol="onAnimationEvent"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="31" lineNum="22" parent="globals/RehoboamAnimationDelegate" pc="268437625" symbol="onAnimationEvent"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="32" lineNum="6" parent="globals/RehoboamAnimationDelegate" pc="268437917" symbol="&lt;init&gt;"/>
-        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="32" lineNum="6" parent="globals/RehoboamAnimationDelegate" pc="268437917" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="34" lineNum="2" parent="globals/Rez/Drawables" pc="268437960" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="35" lineNum="7" parent="globals/Rez/Fonts" pc="268437962" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="36" lineNum="9" parent="globals/Rez/JsonData" pc="268437964" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="37" lineNum="18" parent="globals/Rez/Layouts" pc="268437644" symbol="WatchFace"/>
-        <entry filename="Rez" id="37" lineNum="20" parent="globals/Rez/Layouts" pc="268437656" symbol="WatchFace"/>
-        <entry filename="Rez" id="37" lineNum="21" parent="globals/Rez/Layouts" pc="268437696" symbol="WatchFace"/>
-        <entry filename="Rez" id="37" lineNum="22" parent="globals/Rez/Layouts" pc="268437709" symbol="WatchFace"/>
-        <entry filename="Rez" id="37" lineNum="24" parent="globals/Rez/Layouts" pc="268437725" symbol="WatchFace"/>
-        <entry filename="Rez" id="37" lineNum="26" parent="globals/Rez/Layouts" pc="268437888" symbol="WatchFace"/>
-        <entry filename="Rez" id="38" lineNum="11" parent="globals/Rez/Layouts" pc="268437963" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="39" lineNum="31" parent="globals/Rez/Menus" pc="268437961" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="40" lineNum="33" parent="globals/Rez/Strings" pc="268437965" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="41" lineNum="1" parent="globals/Rez" pc="268437936" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="41" lineNum="1" parent="globals/Rez" pc="268437936" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="2" lineNum="17" parent="globals/RehoboamView" pc="268435513" symbol="onLayout"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="3" lineNum="23" parent="globals/RehoboamView" pc="268435551" symbol="onShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="3" lineNum="24" parent="globals/RehoboamView" pc="268435555" symbol="onShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="3" lineNum="25" parent="globals/RehoboamView" pc="268435575" symbol="onShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="4" lineNum="31" parent="globals/RehoboamView" pc="268435594" symbol="onHide"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="4" lineNum="32" parent="globals/RehoboamView" pc="268435598" symbol="onHide"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="36" parent="globals/RehoboamView" pc="268435619" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="44" parent="globals/RehoboamView" pc="268435623" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="45" parent="globals/RehoboamView" pc="268435636" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="46" parent="globals/RehoboamView" pc="268435646" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="47" parent="globals/RehoboamView" pc="268435656" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="5" lineNum="51" parent="globals/RehoboamView" pc="268435666" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="59" parent="globals/RehoboamView" pc="268435685" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="61" parent="globals/RehoboamView" pc="268435689" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="62" parent="globals/RehoboamView" pc="268435726" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="63" parent="globals/RehoboamView" pc="268435754" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="64" parent="globals/RehoboamView" pc="268435767" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="65" parent="globals/RehoboamView" pc="268435780" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="66" parent="globals/RehoboamView" pc="268435780" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="67" parent="globals/RehoboamView" pc="268435816" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="68" parent="globals/RehoboamView" pc="268435852" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="69" parent="globals/RehoboamView" pc="268435864" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="70" parent="globals/RehoboamView" pc="268435882" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="71" parent="globals/RehoboamView" pc="268435900" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="72" parent="globals/RehoboamView" pc="268435907" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="73" parent="globals/RehoboamView" pc="268435914" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="74" parent="globals/RehoboamView" pc="268435924" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="75" parent="globals/RehoboamView" pc="268435940" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="76" parent="globals/RehoboamView" pc="268435947" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="77" parent="globals/RehoboamView" pc="268435954" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="78" parent="globals/RehoboamView" pc="268435970" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="79" parent="globals/RehoboamView" pc="268435977" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="80" parent="globals/RehoboamView" pc="268435984" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="81" parent="globals/RehoboamView" pc="268435995" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="84" parent="globals/RehoboamView" pc="268436036" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="86" parent="globals/RehoboamView" pc="268436074" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="88" parent="globals/RehoboamView" pc="268436131" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="90" parent="globals/RehoboamView" pc="268436185" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="92" parent="globals/RehoboamView" pc="268436236" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="6" lineNum="94" parent="globals/RehoboamView" pc="268436290" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="98" parent="globals/RehoboamView" pc="268436342" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="99" parent="globals/RehoboamView" pc="268436346" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="100" parent="globals/RehoboamView" pc="268436346" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="101" parent="globals/RehoboamView" pc="268436363" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="102" parent="globals/RehoboamView" pc="268436380" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="103" parent="globals/RehoboamView" pc="268436390" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="104" parent="globals/RehoboamView" pc="268436402" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="105" parent="globals/RehoboamView" pc="268436418" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="106" parent="globals/RehoboamView" pc="268436429" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="109" parent="globals/RehoboamView" pc="268436442" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="110" parent="globals/RehoboamView" pc="268436466" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="7" lineNum="119" parent="globals/RehoboamView" pc="268436490" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="8" lineNum="124" parent="globals/RehoboamView" pc="268436528" symbol="onUpdate"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="8" lineNum="128" parent="globals/RehoboamView" pc="268436532" symbol="onUpdate"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="8" lineNum="129" parent="globals/RehoboamView" pc="268436568" symbol="onUpdate"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="8" lineNum="132" parent="globals/RehoboamView" pc="268436580" symbol="onUpdate"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="8" lineNum="133" parent="globals/RehoboamView" pc="268436592" symbol="onUpdate"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="9" lineNum="137" parent="globals/RehoboamView" pc="268436594" symbol="onExitSleep"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="9" lineNum="138" parent="globals/RehoboamView" pc="268436598" symbol="onExitSleep"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="10" lineNum="142" parent="globals/RehoboamView" pc="268436617" symbol="onEnterSleep"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="10" lineNum="143" parent="globals/RehoboamView" pc="268436621" symbol="onEnterSleep"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="11" lineNum="6" parent="globals/RehoboamView" pc="268438848" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldView.mc" id="11" lineNum="6" parent="globals/RehoboamView" pc="268438848" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="11" parent="globals/RehoboamAnimationController" pc="268436640" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="12" parent="globals/RehoboamAnimationController" pc="268436644" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="13" parent="globals/RehoboamAnimationController" pc="268436654" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="13" lineNum="14" parent="globals/RehoboamAnimationController" pc="268436664" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="17" parent="globals/RehoboamAnimationController" pc="268436697" symbol="handleOnShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="18" parent="globals/RehoboamAnimationController" pc="268436701" symbol="handleOnShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="19" parent="globals/RehoboamAnimationController" pc="268436711" symbol="handleOnShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="21" parent="globals/RehoboamAnimationController" pc="268436727" symbol="handleOnShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="30" parent="globals/RehoboamAnimationController" pc="268436813" symbol="handleOnShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="32" parent="globals/RehoboamAnimationController" pc="268436832" symbol="handleOnShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="14" lineNum="33" parent="globals/RehoboamAnimationController" pc="268436858" symbol="handleOnShow"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="38" parent="globals/RehoboamAnimationController" pc="268436888" symbol="handleOnHide"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="39" parent="globals/RehoboamAnimationController" pc="268436892" symbol="handleOnHide"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="40" parent="globals/RehoboamAnimationController" pc="268436904" symbol="handleOnHide"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="15" lineNum="41" parent="globals/RehoboamAnimationController" pc="268436913" symbol="handleOnHide"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="16" lineNum="45" parent="globals/RehoboamAnimationController" pc="268436923" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="16" lineNum="46" parent="globals/RehoboamAnimationController" pc="268436927" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="16" lineNum="48" parent="globals/RehoboamAnimationController" pc="268436946" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="16" lineNum="49" parent="globals/RehoboamAnimationController" pc="268436977" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="16" lineNum="51" parent="globals/RehoboamAnimationController" pc="268436993" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="16" lineNum="60" parent="globals/RehoboamAnimationController" pc="268437096" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="16" lineNum="61" parent="globals/RehoboamAnimationController" pc="268437126" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="17" lineNum="64" parent="globals/RehoboamAnimationController" pc="268437130" symbol="getTextLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="17" lineNum="65" parent="globals/RehoboamAnimationController" pc="268437134" symbol="getTextLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="68" parent="globals/RehoboamAnimationController" pc="268437144" symbol="getNeedPlaying"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="18" lineNum="69" parent="globals/RehoboamAnimationController" pc="268437148" symbol="getNeedPlaying"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="72" parent="globals/RehoboamAnimationController" pc="268437158" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="73" parent="globals/RehoboamAnimationController" pc="268437162" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="75" parent="globals/RehoboamAnimationController" pc="268437174" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="76" parent="globals/RehoboamAnimationController" pc="268437214" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="79" parent="globals/RehoboamAnimationController" pc="268437227" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="80" parent="globals/RehoboamAnimationController" pc="268437245" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="81" parent="globals/RehoboamAnimationController" pc="268437271" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="82" parent="globals/RehoboamAnimationController" pc="268437297" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="83" parent="globals/RehoboamAnimationController" pc="268437337" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="19" lineNum="87" parent="globals/RehoboamAnimationController" pc="268437349" symbol="play"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="92" parent="globals/RehoboamAnimationController" pc="268437360" symbol="stop"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="93" parent="globals/RehoboamAnimationController" pc="268437364" symbol="stop"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="94" parent="globals/RehoboamAnimationController" pc="268437375" symbol="stop"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="95" parent="globals/RehoboamAnimationController" pc="268437393" symbol="stop"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="20" lineNum="96" parent="globals/RehoboamAnimationController" pc="268437403" symbol="stop"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="100" parent="globals/RehoboamAnimationController" pc="268437417" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="108" parent="globals/RehoboamAnimationController" pc="268437421" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="109" parent="globals/RehoboamAnimationController" pc="268437434" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="110" parent="globals/RehoboamAnimationController" pc="268437444" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="111" parent="globals/RehoboamAnimationController" pc="268437454" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="21" lineNum="115" parent="globals/RehoboamAnimationController" pc="268437464" symbol="updateTimeLayer"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="123" parent="globals/RehoboamAnimationController" pc="268437483" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="124" parent="globals/RehoboamAnimationController" pc="268437487" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="125" parent="globals/RehoboamAnimationController" pc="268437524" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="126" parent="globals/RehoboamAnimationController" pc="268437543" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="127" parent="globals/RehoboamAnimationController" pc="268437556" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="128" parent="globals/RehoboamAnimationController" pc="268437569" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="129" parent="globals/RehoboamAnimationController" pc="268437589" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="130" parent="globals/RehoboamAnimationController" pc="268437609" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="131" parent="globals/RehoboamAnimationController" pc="268437649" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="132" parent="globals/RehoboamAnimationController" pc="268437661" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="133" parent="globals/RehoboamAnimationController" pc="268437701" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="134" parent="globals/RehoboamAnimationController" pc="268437708" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="135" parent="globals/RehoboamAnimationController" pc="268437708" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="136" parent="globals/RehoboamAnimationController" pc="268437715" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="137" parent="globals/RehoboamAnimationController" pc="268437725" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="138" parent="globals/RehoboamAnimationController" pc="268437741" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="139" parent="globals/RehoboamAnimationController" pc="268437748" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="140" parent="globals/RehoboamAnimationController" pc="268437755" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="141" parent="globals/RehoboamAnimationController" pc="268437771" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="142" parent="globals/RehoboamAnimationController" pc="268437778" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="143" parent="globals/RehoboamAnimationController" pc="268437785" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="144" parent="globals/RehoboamAnimationController" pc="268437796" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="147" parent="globals/RehoboamAnimationController" pc="268437839" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="149" parent="globals/RehoboamAnimationController" pc="268437879" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="151" parent="globals/RehoboamAnimationController" pc="268437934" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="153" parent="globals/RehoboamAnimationController" pc="268437992" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="155" parent="globals/RehoboamAnimationController" pc="268438047" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="22" lineNum="157" parent="globals/RehoboamAnimationController" pc="268438105" symbol="drawTime"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="161" parent="globals/RehoboamAnimationController" pc="268438161" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="162" parent="globals/RehoboamAnimationController" pc="268438165" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="163" parent="globals/RehoboamAnimationController" pc="268438165" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="164" parent="globals/RehoboamAnimationController" pc="268438184" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="165" parent="globals/RehoboamAnimationController" pc="268438203" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="166" parent="globals/RehoboamAnimationController" pc="268438213" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="167" parent="globals/RehoboamAnimationController" pc="268438225" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="168" parent="globals/RehoboamAnimationController" pc="268438241" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="169" parent="globals/RehoboamAnimationController" pc="268438252" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="172" parent="globals/RehoboamAnimationController" pc="268438265" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="173" parent="globals/RehoboamAnimationController" pc="268438289" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="23" lineNum="182" parent="globals/RehoboamAnimationController" pc="268438313" symbol="getTimeString"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationController.mc" id="24" lineNum="3" parent="globals/RehoboamAnimationController" pc="268438828" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="26" lineNum="7" parent="globals/westworldApp" pc="268438351" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="26" lineNum="8" parent="globals/westworldApp" pc="268438355" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="27" lineNum="12" parent="globals/westworldApp" pc="268438374" symbol="onStart"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="28" lineNum="16" parent="globals/westworldApp" pc="268438379" symbol="onStop"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="29" lineNum="20" parent="globals/westworldApp" pc="268438384" symbol="getInitialView"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="29" lineNum="21" parent="globals/westworldApp" pc="268438388" symbol="getInitialView"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="29" lineNum="22" parent="globals/westworldApp" pc="268438418" symbol="getInitialView"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="30" lineNum="4" parent="globals/westworldApp" pc="268438829" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldApp.mc" id="30" lineNum="4" parent="globals/westworldApp" pc="268438829" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="32" lineNum="10" parent="globals/RehoboamAnimationDelegate" pc="268438442" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="32" lineNum="11" parent="globals/RehoboamAnimationDelegate" pc="268438446" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="32" lineNum="12" parent="globals/RehoboamAnimationDelegate" pc="268438469" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="32" lineNum="13" parent="globals/RehoboamAnimationDelegate" pc="268438487" symbol="initialize"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="33" lineNum="18" parent="globals/RehoboamAnimationDelegate" pc="268438498" symbol="onAnimationEvent"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="33" lineNum="19" parent="globals/RehoboamAnimationDelegate" pc="268438502" symbol="onAnimationEvent"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="33" lineNum="21" parent="globals/RehoboamAnimationDelegate" pc="268438543" symbol="onAnimationEvent"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="33" lineNum="22" parent="globals/RehoboamAnimationDelegate" pc="268438566" symbol="onAnimationEvent"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="34" lineNum="6" parent="globals/RehoboamAnimationDelegate" pc="268438779" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/nael/Work/watchface/westworld/source/westworldAnimationDelegate.mc" id="34" lineNum="6" parent="globals/RehoboamAnimationDelegate" pc="268438779" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="36" lineNum="2" parent="globals/Rez/Drawables" pc="268438822" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="37" lineNum="7" parent="globals/Rez/Fonts" pc="268438824" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="38" lineNum="11" parent="globals/Rez/JsonData" pc="268438826" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="39" lineNum="20" parent="globals/Rez/Layouts" pc="268438585" symbol="WatchFace"/>
+        <entry filename="Rez" id="39" lineNum="22" parent="globals/Rez/Layouts" pc="268438597" symbol="WatchFace"/>
+        <entry filename="Rez" id="39" lineNum="24" parent="globals/Rez/Layouts" pc="268438760" symbol="WatchFace"/>
+        <entry filename="Rez" id="40" lineNum="13" parent="globals/Rez/Layouts" pc="268438825" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="41" lineNum="29" parent="globals/Rez/Menus" pc="268438823" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="42" lineNum="31" parent="globals/Rez/Strings" pc="268438827" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="43" lineNum="1" parent="globals/Rez" pc="268438798" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="43" lineNum="1" parent="globals/Rez" pc="268438798" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -143,118 +195,154 @@
         <entry id="9" object="true" symbol="RehoboamView"/>
         <entry id="8391333" symbol="delegate"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry field="true" id="32" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_delegator&gt;"/>
-        <entry id="38" method="true" symbol="getNeedPlaying"/>
-        <entry field="true" id="20" symbol="ColorRed"/>
-        <entry id="40" method="true" symbol="getTimeString"/>
-        <entry field="true" id="24" symbol="MilitaryFormatTitle"/>
+        <entry field="true" id="33" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_delegator&gt;"/>
+        <entry id="39" method="true" symbol="getNeedPlaying"/>
+        <entry field="true" id="21" symbol="ColorRed"/>
+        <entry id="42" method="true" symbol="getTimeString"/>
+        <entry field="true" id="25" symbol="MilitaryFormatTitle"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry field="true" id="17" symbol="rehoboam"/>
-        <entry field="true" id="19" symbol="ColorBlue"/>
-        <entry id="43" method="true" symbol="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;"/>
-        <entry field="true" id="27" symbol="AppName"/>
+        <entry field="true" id="20" symbol="ColorBlue"/>
+        <entry id="41" method="true" symbol="drawTime"/>
+        <entry field="true" id="28" symbol="AppName"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="12" object="true" symbol="RehoboamAnimationDelegate"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry field="true" id="28" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_animation&gt;"/>
+        <entry field="true" id="29" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_animation&gt;"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
-        <entry field="true" id="42" symbol="&lt;globals/RehoboamView/&lt;&gt;_animationDelegate&gt;"/>
+        <entry field="true" id="44" symbol="&lt;globals/RehoboamView/&lt;&gt;_animationDelegate&gt;"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
         <entry field="true" id="8389067" symbol="height"/>
-        <entry id="39" method="true" symbol="updateTimeLayer"/>
+        <entry id="40" method="true" symbol="updateTimeLayer"/>
         <entry id="15" module="true" symbol="Menus"/>
-        <entry field="true" id="23" symbol="ColorDarkGray"/>
+        <entry field="true" id="24" symbol="ColorDarkGray"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
         <entry field="true" id="8389066" symbol="width"/>
-        <entry field="true" id="30" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_playing&gt;"/>
+        <entry field="true" id="31" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_playing&gt;"/>
         <entry id="8391445" symbol="visibility"/>
         <entry id="8391298" method="true" symbol="play"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry id="8389376" method="true" symbol="onEnterSleep"/>
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="8389349" symbol="justification"/>
-        <entry field="true" id="26" symbol="ColorWhite"/>
+        <entry field="true" id="27" symbol="ColorWhite"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
-        <entry field="true" id="25" symbol="ColorBlack"/>
+        <entry field="true" id="26" symbol="ColorBlack"/>
+        <entry field="true" id="18" symbol="font_time"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
         <entry id="8391314" method="true" symbol="onAnimationEvent"/>
-        <entry id="44" method="true" symbol="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;"/>
         <entry id="8388699" method="true" symbol="stop"/>
-        <entry field="true" id="31" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_need_playing&gt;"/>
+        <entry field="true" id="32" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_need_playing&gt;"/>
         <entry id="8389377" method="true" symbol="onExitSleep"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry field="true" id="33" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_view&gt;"/>
+        <entry field="true" id="34" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_view&gt;"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
         <entry field="true" id="16" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
-        <entry field="true" id="41" symbol="&lt;globals/westworldApp/&lt;&gt;_view&gt;"/>
-        <entry id="34" method="true" symbol="handleOnShow"/>
+        <entry field="true" id="43" symbol="&lt;globals/westworldApp/&lt;&gt;_view&gt;"/>
+        <entry id="35" method="true" symbol="handleOnShow"/>
         <entry id="8389350" module="true" symbol="globals"/>
-        <entry field="true" id="22" symbol="BackgroundColorTitle"/>
-        <entry field="true" id="29" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_textLayer&gt;"/>
+        <entry field="true" id="23" symbol="BackgroundColorTitle"/>
+        <entry field="true" id="30" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;_textLayer&gt;"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry id="37" method="true" symbol="getTextLayer"/>
+        <entry id="38" method="true" symbol="getTextLayer"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="18" symbol="ColorLightGray"/>
+        <entry field="true" id="19" symbol="ColorLightGray"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389347" symbol="color"/>
-        <entry field="true" id="21" symbol="ForegroundColorTitle"/>
+        <entry field="true" id="22" symbol="ForegroundColorTitle"/>
         <entry field="true" id="13" symbol="_controller"/>
         <entry id="14" module="true" symbol="Layouts"/>
         <entry id="11" object="true" symbol="westworldApp"/>
-        <entry id="36" method="true" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
+        <entry id="37" method="true" symbol="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;"/>
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="8389125" method="true" symbol="onHide"/>
-        <entry id="35" method="true" symbol="handleOnHide"/>
+        <entry id="36" method="true" symbol="handleOnHide"/>
         <entry id="8388635" module="true" symbol="Application"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435513" name="dc" stackId="1" startPc="268435509"/>
-        <entry endPc="268435778" name="hour" stackId="3" startPc="268435586"/>
-        <entry endPc="268435778" name="clockTime" stackId="1" startPc="268435586"/>
-        <entry endPc="268435778" name="info" stackId="2" startPc="268435586"/>
-        <entry endPc="268436001" name="height" stackId="3" startPc="268435784"/>
-        <entry endPc="268436001" name="dc" stackId="1" startPc="268435784"/>
-        <entry endPc="268436001" name="timeString" stackId="4" startPc="268435784"/>
-        <entry endPc="268436001" name="width" stackId="2" startPc="268435784"/>
-        <entry arg="true" endPc="268436074" name="dc" stackId="1" startPc="268436003"/>
-        <entry arg="true" endPc="268436368" name="view" stackId="1" startPc="268436178"/>
-        <entry arg="true" endPc="268436403" name="view" stackId="1" startPc="268436369"/>
-        <entry endPc="268436609" name="height" stackId="3" startPc="268436408"/>
-        <entry endPc="268436609" name="options" stackId="4" startPc="268436408"/>
-        <entry endPc="268436609" name="width" stackId="2" startPc="268436408"/>
-        <entry endPc="268436609" name="textLayer" stackId="5" startPc="268436408"/>
-        <entry endPc="268436609" name="info" stackId="1" startPc="268436408"/>
-        <entry endPc="268437204" name="height" stackId="3" startPc="268436982"/>
-        <entry endPc="268437204" name="dc" stackId="1" startPc="268436982"/>
-        <entry endPc="268437204" name="timeString" stackId="4" startPc="268436982"/>
-        <entry endPc="268437204" name="width" stackId="2" startPc="268436982"/>
-        <entry endPc="268437408" name="hour" stackId="3" startPc="268437210"/>
-        <entry endPc="268437408" name="clockTime" stackId="1" startPc="268437210"/>
-        <entry endPc="268437408" name="info" stackId="2" startPc="268437210"/>
-        <entry arg="true" endPc="268437437" name="state" stackId="1" startPc="268437433"/>
-        <entry arg="true" endPc="268437442" name="state" stackId="1" startPc="268437438"/>
-        <entry arg="true" endPc="268437556" name="controller" stackId="1" startPc="268437501"/>
-        <entry arg="true" endPc="268437643" name="options" stackId="2" startPc="268437557"/>
-        <entry arg="true" endPc="268437643" name="event" stackId="1" startPc="268437557"/>
-        <entry endPc="268437914" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268437656"/>
-        <entry endPc="268437914" name="rez_cmp_local_custom_drawable_background" stackId="2" startPc="268437656"/>
-        <entry arg="true" endPc="268437915" name="dc" stackId="1" startPc="268437644"/>
+        <entry arg="true" endPc="268435550" name="dc" stackId="1" startPc="268435509"/>
+        <entry endPc="268435683" name="time_sec" stackId="4" startPc="268435623"/>
+        <entry endPc="268435683" name="time_hour" stackId="2" startPc="268435623"/>
+        <entry endPc="268435683" name="time" stackId="1" startPc="268435623"/>
+        <entry endPc="268435683" name="time_min" stackId="3" startPc="268435623"/>
+        <entry endPc="268436340" name="space" stackId="10" startPc="268435689"/>
+        <entry endPc="268436340" name="width" stackId="6" startPc="268435689"/>
+        <entry endPc="268436340" name="x_sec_position" stackId="15" startPc="268435689"/>
+        <entry endPc="268436340" name="x_sec_space" stackId="14" startPc="268435689"/>
+        <entry endPc="268436340" name="x_min_position" stackId="13" startPc="268435689"/>
+        <entry endPc="268436340" name="x_first_space" stackId="12" startPc="268435689"/>
+        <entry endPc="268436340" name="hour_str" stackId="8" startPc="268435689"/>
+        <entry endPc="268436340" name="x_hour_position" stackId="11" startPc="268435689"/>
+        <entry endPc="268436340" name="font_time" stackId="4" startPc="268435689"/>
+        <entry endPc="268436340" name="dc" stackId="5" startPc="268435689"/>
+        <entry endPc="268436340" name="height" stackId="7" startPc="268435689"/>
+        <entry endPc="268436340" name="size_policy" stackId="9" startPc="268435689"/>
+        <entry arg="true" endPc="268436341" name="hour" stackId="1" startPc="268435685"/>
+        <entry arg="true" endPc="268436341" name="min" stackId="2" startPc="268435685"/>
+        <entry arg="true" endPc="268436341" name="sec" stackId="3" startPc="268435685"/>
+        <entry endPc="268436526" name="hour" stackId="4" startPc="268436346"/>
+        <entry endPc="268436526" name="str_time" stackId="1" startPc="268436346"/>
+        <entry endPc="268436526" name="min" stackId="5" startPc="268436346"/>
+        <entry endPc="268436526" name="sec" stackId="6" startPc="268436346"/>
+        <entry endPc="268436526" name="clockTime" stackId="2" startPc="268436346"/>
+        <entry endPc="268436526" name="info" stackId="3" startPc="268436346"/>
+        <entry arg="true" endPc="268436593" name="dc" stackId="1" startPc="268436528"/>
+        <entry arg="true" endPc="268436887" name="view" stackId="1" startPc="268436697"/>
+        <entry arg="true" endPc="268436922" name="view" stackId="1" startPc="268436888"/>
+        <entry endPc="268437128" name="height" stackId="3" startPc="268436927"/>
+        <entry endPc="268437128" name="options" stackId="4" startPc="268436927"/>
+        <entry endPc="268437128" name="width" stackId="2" startPc="268436927"/>
+        <entry endPc="268437128" name="textLayer" stackId="5" startPc="268436927"/>
+        <entry endPc="268437128" name="info" stackId="1" startPc="268436927"/>
+        <entry endPc="268437481" name="time_sec" stackId="4" startPc="268437421"/>
+        <entry endPc="268437481" name="time_hour" stackId="2" startPc="268437421"/>
+        <entry endPc="268437481" name="time" stackId="1" startPc="268437421"/>
+        <entry endPc="268437481" name="time_min" stackId="3" startPc="268437421"/>
+        <entry endPc="268438159" name="space" stackId="10" startPc="268437487"/>
+        <entry endPc="268438159" name="width" stackId="6" startPc="268437487"/>
+        <entry endPc="268438159" name="x_sec_position" stackId="15" startPc="268437487"/>
+        <entry endPc="268438159" name="x_sec_space" stackId="14" startPc="268437487"/>
+        <entry endPc="268438159" name="x_min_position" stackId="13" startPc="268437487"/>
+        <entry endPc="268438159" name="x_first_space" stackId="12" startPc="268437487"/>
+        <entry endPc="268438159" name="hour_str" stackId="9" startPc="268437487"/>
+        <entry endPc="268438159" name="x_hour_position" stackId="11" startPc="268437487"/>
+        <entry endPc="268438159" name="font_time" stackId="4" startPc="268437487"/>
+        <entry endPc="268438159" name="dc" stackId="5" startPc="268437487"/>
+        <entry endPc="268438159" name="height" stackId="7" startPc="268437487"/>
+        <entry endPc="268438159" name="size_policy" stackId="8" startPc="268437487"/>
+        <entry arg="true" endPc="268438160" name="hour" stackId="1" startPc="268437483"/>
+        <entry arg="true" endPc="268438160" name="min" stackId="2" startPc="268437483"/>
+        <entry arg="true" endPc="268438160" name="sec" stackId="3" startPc="268437483"/>
+        <entry endPc="268438349" name="hour" stackId="4" startPc="268438165"/>
+        <entry endPc="268438349" name="str_time" stackId="1" startPc="268438165"/>
+        <entry endPc="268438349" name="min" stackId="5" startPc="268438165"/>
+        <entry endPc="268438349" name="sec" stackId="6" startPc="268438165"/>
+        <entry endPc="268438349" name="clockTime" stackId="2" startPc="268438165"/>
+        <entry endPc="268438349" name="info" stackId="3" startPc="268438165"/>
+        <entry arg="true" endPc="268438378" name="state" stackId="1" startPc="268438374"/>
+        <entry arg="true" endPc="268438383" name="state" stackId="1" startPc="268438379"/>
+        <entry arg="true" endPc="268438497" name="controller" stackId="1" startPc="268438442"/>
+        <entry arg="true" endPc="268438584" name="options" stackId="2" startPc="268438498"/>
+        <entry arg="true" endPc="268438584" name="event" stackId="1" startPc="268438498"/>
+        <entry endPc="268438776" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268438597"/>
+        <entry arg="true" endPc="268438777" name="dc" stackId="1" startPc="268438585"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="rehoboam"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="font_time"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
@@ -273,133 +361,145 @@
         <dataEntry label="globals/Rez/Drawables" offset="308" parentId="Rez" symbolId="Drawables" type="module"/>
         <dataEntry label="globals/Rez/Menus" offset="355" parentId="Rez" symbolId="Menus" type="module"/>
         <dataEntry label="globals/Rez/Fonts" offset="386" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="417" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="456" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="487" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/RehoboamAnimationController" offset="598" parentId="globals" symbolId="RehoboamAnimationController" type="class"/>
-        <dataEntry label="globals/westworldApp" offset="765" parentId="globals" symbolId="westworldApp" type="class"/>
-        <dataEntry label="globals/RehoboamView" offset="844" parentId="globals" symbolId="RehoboamView" type="class"/>
+        <dataEntry label="globals/Rez/Layouts" offset="425" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="464" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="495" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/RehoboamAnimationController" offset="606" parentId="globals" symbolId="RehoboamAnimationController" type="class"/>
+        <dataEntry label="globals/westworldApp" offset="781" parentId="globals" symbolId="westworldApp" type="class"/>
+        <dataEntry label="globals/RehoboamView" offset="860" parentId="globals" symbolId="RehoboamView" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435508" name="initialize" parent="RehoboamView" startPc="268435456">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435513" name="onLayout" parent="RehoboamView" startPc="268435509">
+        <functionEntry accessMode="public" endPc="268435550" name="onLayout" parent="RehoboamView" startPc="268435509">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435556" name="onShow" parent="RehoboamView" startPc="268435514">
+        <functionEntry accessMode="public" endPc="268435593" name="onShow" parent="RehoboamView" startPc="268435551">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435581" name="onHide" parent="RehoboamView" startPc="268435557">
+        <functionEntry accessMode="public" endPc="268435618" name="onHide" parent="RehoboamView" startPc="268435594">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268435779" name="&lt;globals/RehoboamView/&lt;&gt;getTimeString&gt;" parent="RehoboamView" startPc="268435582">
+        <functionEntry accessMode="public" endPc="268435684" name="updateTimeLayer" parent="RehoboamView" startPc="268435619">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436002" name="&lt;globals/RehoboamView/&lt;&gt;updateTimeLayer&gt;" parent="RehoboamView" startPc="268435780">
+        <functionEntry accessMode="public" endPc="268436341" name="drawTime" parent="RehoboamView" startPc="268435685">
+            <param id="hour"/>
+            <param id="min"/>
+            <param id="sec"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436074" name="onUpdate" parent="RehoboamView" startPc="268436003">
+        <functionEntry accessMode="public" endPc="268436527" name="getTimeString" parent="RehoboamView" startPc="268436342">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436593" name="onUpdate" parent="RehoboamView" startPc="268436528">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436097" name="onExitSleep" parent="RehoboamView" startPc="268436075">
+        <functionEntry accessMode="public" endPc="268436616" name="onExitSleep" parent="RehoboamView" startPc="268436594">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436120" name="onEnterSleep" parent="RehoboamView" startPc="268436098">
+        <functionEntry accessMode="public" endPc="268436639" name="onEnterSleep" parent="RehoboamView" startPc="268436617">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438004" name="&lt;init&gt;" parent="RehoboamView" startPc="268437986">
+        <functionEntry accessMode="protected" endPc="268438866" name="&lt;init&gt;" parent="RehoboamView" startPc="268438848">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436177" name="initialize" parent="RehoboamAnimationController" startPc="268436121">
+        <functionEntry accessMode="public" endPc="268436696" name="initialize" parent="RehoboamAnimationController" startPc="268436640">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436368" name="handleOnShow" parent="RehoboamAnimationController" startPc="268436178">
+        <functionEntry accessMode="public" endPc="268436887" name="handleOnShow" parent="RehoboamAnimationController" startPc="268436697">
             <param id="view"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436403" name="handleOnHide" parent="RehoboamAnimationController" startPc="268436369">
+        <functionEntry accessMode="public" endPc="268436922" name="handleOnHide" parent="RehoboamAnimationController" startPc="268436888">
             <param id="view"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436610" name="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;" parent="RehoboamAnimationController" startPc="268436404">
+        <functionEntry accessMode="private" endPc="268437129" name="&lt;globals/RehoboamAnimationController/&lt;&gt;buildTextLayer&gt;" parent="RehoboamAnimationController" startPc="268436923">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436624" name="getTextLayer" parent="RehoboamAnimationController" startPc="268436611">
+        <functionEntry accessMode="public" endPc="268437143" name="getTextLayer" parent="RehoboamAnimationController" startPc="268437130">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436638" name="getNeedPlaying" parent="RehoboamAnimationController" startPc="268436625">
+        <functionEntry accessMode="public" endPc="268437157" name="getNeedPlaying" parent="RehoboamAnimationController" startPc="268437144">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436920" name="play" parent="RehoboamAnimationController" startPc="268436639">
+        <functionEntry accessMode="public" endPc="268437359" name="play" parent="RehoboamAnimationController" startPc="268437158">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436977" name="stop" parent="RehoboamAnimationController" startPc="268436921">
+        <functionEntry accessMode="public" endPc="268437416" name="stop" parent="RehoboamAnimationController" startPc="268437360">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437205" name="updateTimeLayer" parent="RehoboamAnimationController" startPc="268436978">
+        <functionEntry accessMode="public" endPc="268437482" name="updateTimeLayer" parent="RehoboamAnimationController" startPc="268437417">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437409" name="getTimeString" parent="RehoboamAnimationController" startPc="268437206">
+        <functionEntry accessMode="public" endPc="268438160" name="drawTime" parent="RehoboamAnimationController" startPc="268437483">
+            <param id="hour"/>
+            <param id="min"/>
+            <param id="sec"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437966" name="&lt;init&gt;" parent="RehoboamAnimationController" startPc="268437966">
+        <functionEntry accessMode="public" endPc="268438350" name="getTimeString" parent="RehoboamAnimationController" startPc="268438161">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437432" name="initialize" parent="westworldApp" startPc="268437410">
+        <functionEntry accessMode="protected" endPc="268438828" name="&lt;init&gt;" parent="RehoboamAnimationController" startPc="268438828">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437437" name="onStart" parent="westworldApp" startPc="268437433">
+        <functionEntry accessMode="public" endPc="268438373" name="initialize" parent="westworldApp" startPc="268438351">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438378" name="onStart" parent="westworldApp" startPc="268438374">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437442" name="onStop" parent="westworldApp" startPc="268437438">
+        <functionEntry accessMode="public" endPc="268438383" name="onStop" parent="westworldApp" startPc="268438379">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437500" name="getInitialView" parent="westworldApp" startPc="268437443">
+        <functionEntry accessMode="public" endPc="268438441" name="getInitialView" parent="westworldApp" startPc="268438384">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437985" name="&lt;init&gt;" parent="westworldApp" startPc="268437967">
+        <functionEntry accessMode="protected" endPc="268438847" name="&lt;init&gt;" parent="westworldApp" startPc="268438829">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437556" name="initialize" parent="RehoboamAnimationDelegate" startPc="268437501">
+        <functionEntry accessMode="public" endPc="268438497" name="initialize" parent="RehoboamAnimationDelegate" startPc="268438442">
             <param id="controller"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437643" name="onAnimationEvent" parent="RehoboamAnimationDelegate" startPc="268437557">
+        <functionEntry accessMode="public" endPc="268438584" name="onAnimationEvent" parent="RehoboamAnimationDelegate" startPc="268438498">
             <param id="event"/>
             <param id="options"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437935" name="&lt;init&gt;" parent="RehoboamAnimationDelegate" startPc="268437917">
+        <functionEntry accessMode="protected" endPc="268438797" name="&lt;init&gt;" parent="RehoboamAnimationDelegate" startPc="268438779">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437960" name="&lt;init&gt;" parent="Drawables" startPc="268437960">
+        <functionEntry accessMode="protected" endPc="268438822" name="&lt;init&gt;" parent="Drawables" startPc="268438822">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437962" name="&lt;init&gt;" parent="Fonts" startPc="268437962">
+        <functionEntry accessMode="protected" endPc="268438824" name="&lt;init&gt;" parent="Fonts" startPc="268438824">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437964" name="&lt;init&gt;" parent="JsonData" startPc="268437964">
+        <functionEntry accessMode="protected" endPc="268438826" name="&lt;init&gt;" parent="JsonData" startPc="268438826">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437915" name="WatchFace" parent="Layouts" startPc="268437644">
+        <functionEntry accessMode="public" endPc="268438777" name="WatchFace" parent="Layouts" startPc="268438585">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437963" name="&lt;init&gt;" parent="Layouts" startPc="268437963">
+        <functionEntry accessMode="protected" endPc="268438825" name="&lt;init&gt;" parent="Layouts" startPc="268438825">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437961" name="&lt;init&gt;" parent="Menus" startPc="268437961">
+        <functionEntry accessMode="protected" endPc="268438823" name="&lt;init&gt;" parent="Menus" startPc="268438823">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437965" name="&lt;init&gt;" parent="Strings" startPc="268437965">
+        <functionEntry accessMode="protected" endPc="268438827" name="&lt;init&gt;" parent="Strings" startPc="268438827">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437959" name="&lt;init&gt;" parent="Rez" startPc="268437936">
+        <functionEntry accessMode="protected" endPc="268438821" name="&lt;init&gt;" parent="Rez" startPc="268438798">
             <documentation/>
         </functionEntry>
     </functions>
