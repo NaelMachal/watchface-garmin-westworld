@@ -8,6 +8,7 @@ class RehoboamAnimationController {
     private var _timeLayer;
     private var _dateLayer;
     private var _cityLayer;
+    private var _batteryLayer;
     private var _playing;
     private var _delegator;
     private var _view;
@@ -15,6 +16,7 @@ class RehoboamAnimationController {
     private var _rate_x_start;
     private var _time_color;
     private var _date_color;
+    
 
     function initialize() {
         _playing = false;
@@ -41,10 +43,12 @@ class RehoboamAnimationController {
             _timeLayer = buildTimeLayer();
             _dateLayer = buildDateLayer();
             _cityLayer = buildCityLayer();
+            _batteryLayer = buildBatteryLayer();
             _view.addLayer(_animation);
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
+            _view.addLayer(_batteryLayer);
         }
 
     }
@@ -54,6 +58,8 @@ class RehoboamAnimationController {
         _animation = null;
         _timeLayer = null;
         _dateLayer = null;
+        _cityLayer = null;
+        _batteryLayer = null;
     }
 
     // Function to initialize the time layer
@@ -114,6 +120,26 @@ class RehoboamAnimationController {
         return cityLayer;
     }
 
+    private function buildBatteryLayer(){
+        var info = System.getDeviceSettings();
+        // Word aligning the width and height for better blits
+        var width = (info.screenWidth * .80).toNumber() & ~0x3;
+        var height = info.screenHeight * .25;
+
+        var options = {
+            :locX => ( (info.screenWidth - width) / 2 ).toNumber() & ~0x03,
+            :locY => (info.screenHeight - height) / 0.8,
+            :width => width,
+            :height => height,
+            :visibility=>true
+        };
+
+        // Initialize the Time over the animation
+        var cityLayer = new WatchUi.Layer(options);
+        return cityLayer;
+    }
+
+
 
     function getCountAnimationRepete(){
         return _count_repete_animation;
@@ -132,6 +158,7 @@ class RehoboamAnimationController {
         _view.addLayer(_timeLayer);
         _view.addLayer(_dateLayer);
         _view.addLayer(_cityLayer);
+        _view.addLayer(_batteryLayer);
     }
 
     function clearTextLayer(){
@@ -154,6 +181,7 @@ class RehoboamAnimationController {
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
+            _view.batteryLayer(_cityLayer);
             _animation.play({:delegate => _delegator});
             updateTextLayers();
             
@@ -171,6 +199,7 @@ class RehoboamAnimationController {
         drawTime();
         drawDate();
         drawCity();
+        drawBattery();
     }
 
     function drawCity() {
@@ -181,8 +210,7 @@ class RehoboamAnimationController {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         var width = dc.getWidth();
         var height = dc.getHeight();
-        var x_city_position = width / _rate_x_start + 40;
-        System.println(x_date_position);
+        var x_city_position = width / _rate_x_start + 80;
         var height_date = height / 2;
         var city_string = "Divergence : Annecy";
         dc.drawText(x_city_position, height_date, font_date, city_string,
@@ -200,7 +228,6 @@ class RehoboamAnimationController {
         var height = dc.getHeight();
         var x_bar_position = width / _rate_x_start + 40;
         var x_date_position = width / _rate_x_start + 40;
-        System.println(x_date_position);
         var height_date = height / 2;
         dc.drawText(x_bar_position, height_date, font_date, "_____________",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
@@ -235,7 +262,6 @@ class RehoboamAnimationController {
         var hour_str;
         var space = 25;
         var x_hour_position = width / _rate_x_start;
-        System.println(x_hour_position);
         var height_time = height / 2;
         var x_first_space = x_hour_position + 2*size_policy + space;
         var x_min_position = x_first_space + space;
