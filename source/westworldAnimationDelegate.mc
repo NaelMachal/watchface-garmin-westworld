@@ -8,7 +8,6 @@ class RehoboamAnimationDelegate extends WatchUi.AnimationDelegate {
 
 	// Constructor
     function initialize(controller) {
-        System.println("we are in the second delegator");
         AnimationDelegate.initialize();
         _controller = controller;
     }
@@ -18,7 +17,6 @@ class RehoboamAnimationDelegate extends WatchUi.AnimationDelegate {
     function onAnimationEvent(event, options) {
         switch(event) {
             case WatchUi.ANIMATION_EVENT_COMPLETE:
-                System.println("we are here");
                 _controller.play();
             /* 
             case WatchUi.ANIMATION_EVENT_CANCELED:

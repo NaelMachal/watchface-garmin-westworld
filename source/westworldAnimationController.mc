@@ -7,18 +7,20 @@ class RehoboamAnimationController {
     private var _need_playing;
     private var _delegator;
     private var _view;
+    private var _count_repete_animation;
 
     function initialize() {
         _playing = false;
         _need_playing = true;
         _delegator = new RehoboamAnimationDelegate(self);
+        _count_repete_animation = 0;
     }
 
     function handleOnShow(view) {
         _view = view;
         if( view.getLayers() == null ) {
             // Initialize the Animation
-            _animation = new WatchUi.AnimationLayer(
+             _animation = new WatchUi.AnimationLayer(
                 Rez.Drawables.rehoboam,
                 {
                     :locX=>0,
@@ -68,14 +70,39 @@ class RehoboamAnimationController {
     function getNeedPlaying() {
         return _need_playing;
     }
+    
+    function getCountAnimationRepete(){
+        return _count_repete_animation;
+    }
+
+    function setCountAnimationRepete(a){
+        _count_repete_animation = a;       
+    }
+
+    function clearLayers(){
+        _view.clearLayers();
+    }
+
+    function clearAnimationLayer(){
+        _view.clearLayers();
+        _view.addLayer(_textLayer);
+    }
+
+    function clearTextLayer(){
+        _view.clearLayers();
+        _view.addLayer(_animation);
+        _animation.play({:delegate => _delegator});
+    }
 
     function play() {
+        System.println("has been asked to play");
         if (!_playing){
          //_view.addLayer(_animation);
          _animation.play({:delegate => _delegator});
         _playing = true;
         }
         else {
+            _count_repete_animation = _count_repete_animation + 1;
             _view.clearLayers();
             _view.addLayer(_animation);
             _view.addLayer(_textLayer);
@@ -83,41 +110,25 @@ class RehoboamAnimationController {
             updateTimeLayer();
             
         }
-        
         _need_playing = true;
-        
-    
     }
 
     function stop() {
+        System.println(_playing);
         if(_playing) {
-            _animation.stop();
+            System.println(_animation.stop());
             _playing = false;
             _need_playing = true;
         }
     }
 
     function updateTimeLayer() {
-        /*
-        var font_time = WatchUi.loadResource(Rez.Fonts.font_time);
-        var dc = _textLayer.getDc();
-        var width = dc.getWidth();
-        var height = dc.getHeight();
-        */
         // Clear the layer contents
         var time = getTimeString();
         var time_hour = time[0];
         var time_min = time[1];
         var time_sec = time[2];
-        //dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
-        //dc.clear();
-        // Draw the time in the middle
         drawTime(time_hour, time_min, time_sec);
-        //dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        /*
-        dc.drawText(width / 3, height / 2, font_time, timeString,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_CENTER);
-        */
     }
     
     function drawTime(hour, min, sec){
@@ -125,8 +136,6 @@ class RehoboamAnimationController {
         var dc = _textLayer.getDc();
         var width = dc.getWidth();
         var height = dc.getHeight();
-        System.println(width);
-        System.println(height);
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
@@ -171,14 +180,6 @@ class RehoboamAnimationController {
         }
         var min = clockTime.min.format("%02d");
         var sec = clockTime.sec.format("%02d");
-        /*
-        if (hour<10) {
-            str_time = Lang.format("0$1$:$2$:$3$", [hour, clockTime.min.format("%02d"),clockTime.sec.format("%02d")]);
-        }
-        else {
-            str_time = Lang.format("$1$:$2$:$3$", [hour, clockTime.min.format("%02d"),clockTime.sec.format("%02d")]);
-        }
-        */
         return [hour, min, sec];
     }
 }
