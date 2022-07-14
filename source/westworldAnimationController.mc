@@ -9,6 +9,7 @@ class RehoboamAnimationController {
     private var _dateLayer;
     private var _cityLayer;
     private var _batteryLayer;
+    private var _iconLayer;
     private var _playing;
     private var _delegator;
     private var _view;
@@ -44,11 +45,13 @@ class RehoboamAnimationController {
             _dateLayer = buildDateLayer();
             _cityLayer = buildCityLayer();
             _batteryLayer = buildBatteryLayer();
+            _iconLayer = buildIconLayer();
             _view.addLayer(_animation);
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
             _view.addLayer(_batteryLayer);
+            _view.addLayer(_iconLayer);
         }
 
     }
@@ -60,6 +63,7 @@ class RehoboamAnimationController {
         _dateLayer = null;
         _cityLayer = null;
         _batteryLayer = null;
+        _iconLayer = null;
     }
 
     // Function to initialize the time layer
@@ -139,6 +143,25 @@ class RehoboamAnimationController {
         return batteryLayer;
     }
 
+    private function buildIconLayer(){
+        var info = System.getDeviceSettings();
+        // Word aligning the width and height for better blits
+        var width = (info.screenWidth * .80).toNumber() & ~0x3;
+        var height = info.screenHeight * .25;
+
+        var options = {
+            :locX => ( (info.screenWidth - width) / 2 ).toNumber() & ~0x03,
+            :locY => (info.screenHeight - height) / 45,
+            :width => width,
+            :height => height,
+            :visibility=>true
+        };
+
+        // Initialize the Time over the animation
+        var iconLayer = new WatchUi.Layer(options);
+        return iconLayer;
+    }
+
 
 
     function getCountAnimationRepete(){
@@ -159,6 +182,7 @@ class RehoboamAnimationController {
         _view.addLayer(_dateLayer);
         _view.addLayer(_cityLayer);
         _view.addLayer(_batteryLayer);
+        _view.addLayer(_iconLayer);
     }
 
     function clearTextLayer(){
@@ -168,7 +192,6 @@ class RehoboamAnimationController {
     }
 
     function play() {
-        System.println("has been asked to play");
         if (!_playing){
          //_view.addLayer(_animation);
          _animation.play({:delegate => _delegator});
@@ -182,6 +205,7 @@ class RehoboamAnimationController {
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
             _view.addLayer(_batteryLayer);
+            _view.addLayer(_iconLayer);
             _animation.play({:delegate => _delegator});
             updateTextLayers();
             
@@ -200,7 +224,22 @@ class RehoboamAnimationController {
         drawDate();
         drawCity();
         drawBattery();
+        drawIcon();
     }
+
+    function drawIcon() {
+        var image = WatchUi.loadResource(Rez.Drawables.WWIcon);
+        var dc = _iconLayer.getDc();
+        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
+        dc.clear();
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        var x_icon_position = width / 2 - 16;
+        var height_icon = height / 2;
+        dc.drawBitmap( x_icon_position, height_icon, image );
+    }
+
 
     function drawBattery() {
         var battery = System.getSystemStats().battery;
