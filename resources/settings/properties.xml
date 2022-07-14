@@ -1,7 +1,7 @@
 <properties>
-
     <property id="BackgroundColor" type="number">0x000000</property>
-    <property id="ForegroundColor" type="number">0xFF0000</property>
+    <property id="ForegroundColor" type="number">0x000000</property>
+    <property id="time_color" type="number">0xFFFFFF</property>
+    <property id="date_color" type="number">0x5B5B5B</property>
     <property id="UseMilitaryFormat" type="boolean">false</property>
-
 </properties>

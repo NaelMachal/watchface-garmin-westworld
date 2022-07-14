@@ -43,10 +43,11 @@ class RehoboamView extends WatchUi.WatchFace {
         if (!_sleepmode){
             dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
             dc.clear();
-            _animationDelegate.updateTimeLayer();
+            _animationDelegate.updateTextLayers();
             
         }
         if (_sleepmode){
+            /*
             dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
             dc.clear();
             
@@ -54,44 +55,50 @@ class RehoboamView extends WatchUi.WatchFace {
             if (!_has_clock_stopped_in_sleep){
                 System.println("clock stopped");
                 //_animationDelegate.clearTextLayer();
-                _animationDelegate.clearLayers();
+                //_animationDelegate.clearLayers();
+                 _animationDelegate.handleOnHide(self);
+                 _animationDelegate.handleOnShow(self);
+                 _animationDelegate.play();
                 _has_clock_stopped_in_sleep = true;
             }
-            /*
+            */
             if (!_has_animation_stopped_in_sleep){
                 _animationDelegate.clearAnimationLayer();
                  _has_animation_stopped_in_sleep = true;
             }
             dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
             dc.clear();
-            _animationDelegate.updateTimeLayer();
-            */
+            _animationDelegate.updateTextLayers();
             /*
+            System.println(_animationDelegate.getCountAnimationRepete());
             if (!_has_animation_stopped_in_sleep){
                 if (_animationDelegate.getCountAnimationRepete() > 2){
                     System.println("count worked");
-                    _animationDelegate.clearAnimationLayer();
+                    _animationDelegate.handleOnHide(self);
+                    //_animationDelegate.clearLayers();
                     _has_animation_stopped_in_sleep = true;
                 }
-            }*/
+            }
+            */
         }
         return;
     }
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
-        _animationDelegate.setCountAnimationRepete(0);
+        //_animationDelegate.setCountAnimationRepete(0);
         _has_animation_stopped_in_sleep = false;
         _has_clock_stopped_in_sleep = false;
         _sleepmode = false;
+        _animationDelegate.handleOnHide(self);
         _animationDelegate.handleOnShow(self);
         _animationDelegate.play();
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() {
-         _animationDelegate.setCountAnimationRepete(0);
-        System.println("stopping animaton"); 
+        //_animationDelegate.setCountAnimationRepete(0);
+        //System.println("stopping animaton"); 
         _sleepmode = true;
     }
 
