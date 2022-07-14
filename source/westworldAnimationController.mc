@@ -8,6 +8,7 @@ class RehoboamAnimationController {
     private var _timeLayer;
     private var _dateLayer;
     private var _cityLayer;
+    private var _drawLayer;
     private var _batteryLayer;
     private var _iconLayer;
     private var _playing;
@@ -44,12 +45,14 @@ class RehoboamAnimationController {
             _timeLayer = buildTimeLayer();
             _dateLayer = buildDateLayer();
             _cityLayer = buildCityLayer();
+            _drawLayer = buildDrawLayer();
             _batteryLayer = buildBatteryLayer();
             _iconLayer = buildIconLayer();
             _view.addLayer(_animation);
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
+            _view.addLayer(_drawLayer);
             _view.addLayer(_batteryLayer);
             _view.addLayer(_iconLayer);
         }
@@ -123,6 +126,24 @@ class RehoboamAnimationController {
         var cityLayer = new WatchUi.Layer(options);
         return cityLayer;
     }
+    private function buildDrawLayer(){
+        var info = System.getDeviceSettings();
+        // Word aligning the width and height for better blits
+        var width = (info.screenWidth).toNumber() & ~0x3;
+        var height = info.screenHeight * .5;
+
+        var options = {
+            :locX => ( info.screenWidth - width).toNumber() & ~0x03,
+            :locY => (info.screenHeight - height) / 1.1,
+            :width => width,
+            :height => height,
+            :visibility=>true
+        };
+
+        // Initialize the Time over the animation
+        var drawLayer = new WatchUi.Layer(options);
+        return drawLayer;
+    }
 
     private function buildBatteryLayer(){
         var info = System.getDeviceSettings();
@@ -181,6 +202,7 @@ class RehoboamAnimationController {
         _view.addLayer(_timeLayer);
         _view.addLayer(_dateLayer);
         _view.addLayer(_cityLayer);
+        _view.addLayer(_drawLayer);
         _view.addLayer(_batteryLayer);
         _view.addLayer(_iconLayer);
     }
@@ -204,6 +226,7 @@ class RehoboamAnimationController {
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
+            _view.addLayer(_drawLayer);
             _view.addLayer(_batteryLayer);
             _view.addLayer(_iconLayer);
             _animation.play({:delegate => _delegator});
@@ -223,6 +246,7 @@ class RehoboamAnimationController {
         drawTime();
         drawDate();
         drawCity();
+        drawLines();
         drawBattery();
         drawIcon();
     }
@@ -272,6 +296,18 @@ class RehoboamAnimationController {
         }
     }
 
+    function drawLines() {
+        var dc = _drawLayer.getDc();
+        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
+        dc.clear();
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        
+        dc.setPenWidth(2.5);
+        dc.drawLine(72,90,300,90);
+        dc.setPenWidth(1);
+        dc.drawLine(200,90,335,145);
+        dc.fillCircle(335, 145, 5);
+    }
 
     function drawCity() {
         var font_city = WatchUi.loadResource(Rez.Fonts.font_city);
@@ -286,7 +322,7 @@ class RehoboamAnimationController {
         var city_string = "Divergence : Annecy";
         dc.drawText(x_city_position, height_date, font_city, city_string,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-
+        
     }
 
     function drawDate() {
