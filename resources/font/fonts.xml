@@ -2,4 +2,5 @@
 	<font id="font_time" filename="champ_white_3_70.fnt" filter="0123456789:" />
 	<font id="font_date" filename="champ_white_2_25.fnt"/>
 	<font id="font_city" filename="champ_white_3_30.fnt"/>
+	<font id="font_battery" filename="battery.fnt"/>
 </fonts>  

@@ -128,15 +128,15 @@ class RehoboamAnimationController {
 
         var options = {
             :locX => ( (info.screenWidth - width) / 2 ).toNumber() & ~0x03,
-            :locY => (info.screenHeight - height) / 0.8,
+            :locY => (info.screenHeight - height) / 1.1,
             :width => width,
             :height => height,
             :visibility=>true
         };
 
         // Initialize the Time over the animation
-        var cityLayer = new WatchUi.Layer(options);
-        return cityLayer;
+        var batteryLayer = new WatchUi.Layer(options);
+        return batteryLayer;
     }
 
 
@@ -181,7 +181,7 @@ class RehoboamAnimationController {
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
-            _view.batteryLayer(_cityLayer);
+            _view.addLayer(_batteryLayer);
             _animation.play({:delegate => _delegator});
             updateTextLayers();
             
@@ -202,8 +202,40 @@ class RehoboamAnimationController {
         drawBattery();
     }
 
+    function drawBattery() {
+        var battery = System.getSystemStats().battery;
+        var font_battery = WatchUi.loadResource(Rez.Fonts.font_battery);
+        var dc = _batteryLayer.getDc();
+        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
+        dc.clear();
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        var x_battery_position = width / 2;
+        var height_date = height / 2;
+        
+        if (System.getSystemStats().charging) {
+            dc.drawText(x_battery_position, height_date, font_battery, "B",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
+        else if (battery > 75) {
+            dc.drawText(x_battery_position, height_date, font_battery, "A",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        } else if (battery > 50) {
+            dc.drawText(x_battery_position, height_date, font_battery, "R",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        } else if (battery > 25) {
+            dc.drawText(x_battery_position, height_date, font_battery, "S",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        } else {
+           dc.drawText(x_battery_position, height_date, font_battery, "T",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
+    }
+
+
     function drawCity() {
-        var font_date = WatchUi.loadResource(Rez.Fonts.font_city);
+        var font_city = WatchUi.loadResource(Rez.Fonts.font_city);
         var dc = _cityLayer.getDc();
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
         dc.clear();
@@ -213,7 +245,7 @@ class RehoboamAnimationController {
         var x_city_position = width / _rate_x_start + 80;
         var height_date = height / 2;
         var city_string = "Divergence : Annecy";
-        dc.drawText(x_city_position, height_date, font_date, city_string,
+        dc.drawText(x_city_position, height_date, font_city, city_string,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
     }
