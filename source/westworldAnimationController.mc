@@ -278,7 +278,7 @@ class RehoboamAnimationController {
         var height_date = height / 2;
         
         if (System.getSystemStats().charging) {
-            dc.drawText(x_battery_position, height_date, font_battery, "B",
+            dc.drawText(x_battery_position, height_date, font_battery, "[",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
         else if (battery > 75) {
@@ -300,13 +300,14 @@ class RehoboamAnimationController {
         var dc = _drawLayer.getDc();
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
         dc.clear();
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
         
         dc.setPenWidth(2.5);
-        dc.drawLine(72,90,300,90);
+        dc.drawLine(72,95,300,95);
         dc.setPenWidth(1);
-        dc.drawLine(200,90,335,145);
+        dc.drawLine(200,95,335,145);
         dc.fillCircle(335, 145, 5);
+        dc.drawCircle(335, 145, 15);
     }
 
     function drawCity() {
