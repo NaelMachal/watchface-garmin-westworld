@@ -278,7 +278,7 @@ class RehoboamAnimationController {
         drawCity();
         drawDownBar();
         drawLines();
-        drawBattery();
+        drawHealthStatus();
         drawIcon();
     }
 
@@ -295,7 +295,33 @@ class RehoboamAnimationController {
         dc.drawBitmap( x_icon_position, height_icon, image );
     }
 
-    function drawBattery() {
+    function drawHealthStatus() {
+        var font_icons_str = WatchUi.loadResource(Rez.Fonts.font_icons_str);
+        var dc = _batteryLayer.getDc();
+        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
+        dc.clear();
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        var height = dc.getHeight();
+        var height_icons = height / 1.6;
+        drawBattery(dc, font_icons_str, height_icons, 2.2);
+        drawHeart(dc, font_icons_str, height_icons, 1.8);
+
+    }
+
+    function drawHeart(dc, font_icons_str, height_icons, rate_width) {
+        var font_heart = WatchUi.loadResource(Rez.Fonts.font_icons);
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        var x_heart_position = width / rate_width;
+        var heartRate = getHeartRate();
+        dc.drawText(x_heart_position, height_icons -5 , font_heart, "h",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        dc.drawText(x_heart_position, height_icons + +20 ,font_icons_str , heartRate,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    function drawBattery(dc, font_icons_str, height_icons, rate_width) {
         var battery_str;
         var battery = System.getSystemStats().battery;
         if (battery == 100){
@@ -304,20 +330,10 @@ class RehoboamAnimationController {
         else {
             battery_str = battery.format("%02d");
         }
-        
-        var heartRate = getHeartRate();
         var font_battery = WatchUi.loadResource(Rez.Fonts.font_battery);
-        var font_icons_str = WatchUi.loadResource(Rez.Fonts.font_icons_str);
-        var font_heart = WatchUi.loadResource(Rez.Fonts.font_icons);
-        var dc = _batteryLayer.getDc();
-        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
-        dc.clear();
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         var width = dc.getWidth();
         var height = dc.getHeight();
-        var x_battery_position = width / 2.2;
-        var x_heart_position = width / 1.8;
-        var height_icons = height / 1.6;
+        var x_battery_position = width / rate_width;
         if (System.getSystemStats().charging) {
             dc.drawText(x_battery_position, height_icons, font_battery, "[",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
@@ -338,13 +354,6 @@ class RehoboamAnimationController {
 
         dc.drawText(x_battery_position, height_icons  + 20 ,font_icons_str , battery_str,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-
-        dc.drawText(x_heart_position, height_icons -5 , font_heart, "h",
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-
-        dc.drawText(x_heart_position, height_icons + +20 ,font_icons_str , heartRate,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-
     }
 
     function getHeartRate(){
