@@ -4,5 +4,5 @@
 	<font id="font_city" filename="champ_white_3_30.fnt"/>
 	<font id="font_battery" filename="battery.fnt" filter="[ARST"/>
 	<font id="font_icons" filename="icons.fnt" filter="h"/>
-	<font id="font_icons_str" filename="champ_white_1_15.fnt" filter="1234567890"/>
+	<font id="font_icons_str" filename="champ_white_1_15.fnt" filter="1234567890-"/>
 </fonts>  

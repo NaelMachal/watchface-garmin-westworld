@@ -296,8 +296,15 @@ class RehoboamAnimationController {
     }
 
     function drawBattery() {
+        var battery_str;
         var battery = System.getSystemStats().battery;
-        var battery_str = Lang.format("$1$", [battery]);
+        if (battery == 100){
+            battery_str = battery.format("%03d");
+        }
+        else {
+            battery_str = battery.format("%02d");
+        }
+        
         var heartRate = getHeartRate();
         var font_battery = WatchUi.loadResource(Rez.Fonts.font_battery);
         var font_icons_str = WatchUi.loadResource(Rez.Fonts.font_icons_str);
@@ -332,10 +339,10 @@ class RehoboamAnimationController {
         dc.drawText(x_battery_position, height_icons  + 20 ,font_icons_str , battery_str,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        dc.drawText(x_heart_position, height_icons , font_heart, "h",
+        dc.drawText(x_heart_position, height_icons -5 , font_heart, "h",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        dc.drawText(x_heart_position, height_icons + 10,font_icons_str , heartRate,
+        dc.drawText(x_heart_position, height_icons + +20 ,font_icons_str , heartRate,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
     }
@@ -357,13 +364,10 @@ class RehoboamAnimationController {
             else{
                 heartRate = "--";
             }
-            System.println(heartRate);
         }
         else {
             heartRate = "--";
-            System.println(heartRate);
         }
-        System.println(heartRate);
         return heartRate;
     }
 
