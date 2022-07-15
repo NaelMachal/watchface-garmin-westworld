@@ -2,12 +2,15 @@ using Toybox.WatchUi;
 using Toybox.Application;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
+using Toybox.ActivityMonitor as ActMon;
+using Toybox.Activity as Mon;
 
 class RehoboamAnimationController {
     private var _animation;
     private var _timeLayer;
     private var _dateLayer;
     private var _cityLayer;
+    private var _downBarLayer;
     private var _drawLayer;
     private var _batteryLayer;
     private var _iconLayer;
@@ -45,6 +48,7 @@ class RehoboamAnimationController {
             _timeLayer = buildTimeLayer();
             _dateLayer = buildDateLayer();
             _cityLayer = buildCityLayer();
+            _downBarLayer = buildDownBarLayer();
             _drawLayer = buildDrawLayer();
             _batteryLayer = buildBatteryLayer();
             _iconLayer = buildIconLayer();
@@ -52,6 +56,7 @@ class RehoboamAnimationController {
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
+            _view.addLayer(_downBarLayer);
             _view.addLayer(_drawLayer);
             _view.addLayer(_batteryLayer);
             _view.addLayer(_iconLayer);
@@ -65,6 +70,7 @@ class RehoboamAnimationController {
         _timeLayer = null;
         _dateLayer = null;
         _cityLayer = null;
+        _downBarLayer = null;
         _batteryLayer = null;
         _iconLayer = null;
     }
@@ -126,6 +132,28 @@ class RehoboamAnimationController {
         var cityLayer = new WatchUi.Layer(options);
         return cityLayer;
     }
+
+    private function buildDownBarLayer(){
+        var info = System.getDeviceSettings();
+        // Word aligning the width and height for better blits
+        var width = (info.screenWidth).toNumber() & ~0x3;
+        var height = info.screenHeight * 0.5;
+
+        var options = {
+            :locX => ( info.screenWidth - width).toNumber() & ~0x03,
+            :locY => (info.screenHeight - height) / 1.1,
+            :width => width,
+            :height => height,
+            :visibility=>true
+        };
+
+        // Initialize the Time over the animation
+        var barLayer = new WatchUi.Layer(options);
+        return barLayer;
+    }
+    
+
+
     private function buildDrawLayer(){
         var info = System.getDeviceSettings();
         // Word aligning the width and height for better blits
@@ -202,6 +230,7 @@ class RehoboamAnimationController {
         _view.addLayer(_timeLayer);
         _view.addLayer(_dateLayer);
         _view.addLayer(_cityLayer);
+        _view.addLayer(_downBarLayer);
         _view.addLayer(_drawLayer);
         _view.addLayer(_batteryLayer);
         _view.addLayer(_iconLayer);
@@ -226,6 +255,7 @@ class RehoboamAnimationController {
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
+            _view.addLayer(_downBarLayer);
             _view.addLayer(_drawLayer);
             _view.addLayer(_batteryLayer);
             _view.addLayer(_iconLayer);
@@ -246,6 +276,7 @@ class RehoboamAnimationController {
         drawTime();
         drawDate();
         drawCity();
+        drawDownBar();
         drawLines();
         drawBattery();
         drawIcon();
@@ -264,36 +295,48 @@ class RehoboamAnimationController {
         dc.drawBitmap( x_icon_position, height_icon, image );
     }
 
-
     function drawBattery() {
         var battery = System.getSystemStats().battery;
         var font_battery = WatchUi.loadResource(Rez.Fonts.font_battery);
+        var font_heart = WatchUi.loadResource(Rez.Fonts.font_icons);
         var dc = _batteryLayer.getDc();
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
         dc.clear();
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         var width = dc.getWidth();
         var height = dc.getHeight();
-        var x_battery_position = width / 2;
-        var height_date = height / 2;
-        
+        var x_battery_position = width / 2.2;
+        var x_heart_position = width / 1.8;
+        var height_icons = height / 1.6;
         if (System.getSystemStats().charging) {
-            dc.drawText(x_battery_position, height_date, font_battery, "[",
+            dc.drawText(x_battery_position, height_icons, font_battery, "[",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
         else if (battery > 75) {
-            dc.drawText(x_battery_position, height_date, font_battery, "A",
+            dc.drawText(x_battery_position, height_icons, font_battery, "A",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         } else if (battery > 50) {
-            dc.drawText(x_battery_position, height_date, font_battery, "R",
+            dc.drawText(x_battery_position, height_icons, font_battery, "R",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         } else if (battery > 25) {
-            dc.drawText(x_battery_position, height_date, font_battery, "S",
+            dc.drawText(x_battery_position, height_icons, font_battery, "S",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         } else {
-           dc.drawText(x_battery_position, height_date, font_battery, "T",
+           dc.drawText(x_battery_position, height_icons, font_battery, "T",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
+        dc.drawText(x_heart_position, height_icons - 5, font_heart, "h",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    function drawDownBar(){
+        var font_bar = WatchUi.loadResource(Rez.Fonts.font_date);
+        var dc = _downBarLayer.getDc();
+        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
+        dc.clear();
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(183, 87, font_bar, "____________________",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
     function drawLines() {
@@ -302,10 +345,10 @@ class RehoboamAnimationController {
         dc.clear();
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
         
-        dc.setPenWidth(2.5);
-        dc.drawLine(72,95,300,95);
+        //dc.setPenWidth(2.5);
+        //dc.drawLine(72,95,300,95);
         dc.setPenWidth(1);
-        dc.drawLine(200,95,335,145);
+        dc.drawLine(230,97,335,145);
         dc.fillCircle(335, 145, 5);
         dc.drawCircle(335, 145, 15);
     }
