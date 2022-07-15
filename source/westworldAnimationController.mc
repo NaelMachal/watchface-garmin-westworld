@@ -3,7 +3,7 @@ using Toybox.Application;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
 using Toybox.ActivityMonitor as ActMon;
-using Toybox.Activity as Mon;
+using Toybox.Activity as Act;
 
 class RehoboamAnimationController {
     private var _animation;
@@ -297,7 +297,10 @@ class RehoboamAnimationController {
 
     function drawBattery() {
         var battery = System.getSystemStats().battery;
+        var battery_str = Lang.format("$1$", [battery]);
+        var heartRate = getHeartRate();
         var font_battery = WatchUi.loadResource(Rez.Fonts.font_battery);
+        var font_icons_str = WatchUi.loadResource(Rez.Fonts.font_icons_str);
         var font_heart = WatchUi.loadResource(Rez.Fonts.font_icons);
         var dc = _batteryLayer.getDc();
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
@@ -325,8 +328,43 @@ class RehoboamAnimationController {
            dc.drawText(x_battery_position, height_icons, font_battery, "T",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
-        dc.drawText(x_heart_position, height_icons - 5, font_heart, "h",
+
+        dc.drawText(x_battery_position, height_icons  + 20 ,font_icons_str , battery_str,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        dc.drawText(x_heart_position, height_icons , font_heart, "h",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        dc.drawText(x_heart_position, height_icons + 10,font_icons_str , heartRate,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+    }
+
+    function getHeartRate(){
+        var heartRate;
+        if (ActMon has :getHeartRateHistory) {
+            heartRate = Act.getActivityInfo().currentHeartRate;
+            if(heartRate==null) {
+                var HRH=ActMon.getHeartRateHistory(1, true);
+                var HRS=HRH.next();
+                if(HRS!=null && HRS.heartRate!= ActMon.INVALID_HR_SAMPLE){
+                    heartRate = HRS.heartRate;
+                }
+            }
+            if(heartRate!=null) {
+                heartRate = heartRate.toString();
+            }
+            else{
+                heartRate = "--";
+            }
+            System.println(heartRate);
+        }
+        else {
+            heartRate = "--";
+            System.println(heartRate);
+        }
+        System.println(heartRate);
+        return heartRate;
     }
 
     function drawDownBar(){
