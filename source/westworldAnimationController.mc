@@ -319,7 +319,7 @@ class RehoboamAnimationController {
         var height = dc.getHeight();
         var x_weather_position = width / rate_width;
         if (weather != null) {
-            temperature = weather.temperature;
+            temperature = weather.temperature.format("%02d");
             condition = weather.condition;
             var clear = [0, 23];
             var rainy = [3,15,25,26, 49];
@@ -370,9 +370,13 @@ class RehoboamAnimationController {
                 dc.drawText(x_weather_position, height_icons -5 , font_weather, "o",
                 Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
             }
+            dc.drawText(x_weather_position, height_icons + +20 ,font_icons_str , temperature,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
         else {
             dc.drawText(x_weather_position, height_icons -5 , font_weather, "o",
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.drawText(x_weather_position, height_icons + +20 ,font_icons_str , "--",
                 Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
         
@@ -393,7 +397,7 @@ class RehoboamAnimationController {
         dc.drawText(x_heart_position, height_icons -5 , font_heart, "h",
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
-        dc.drawText(x_heart_position, height_icons + +20 ,font_icons_str , heartRate,
+        dc.drawText(x_heart_position, height_icons +20 ,font_icons_str , heartRate,
             Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
     }
 
