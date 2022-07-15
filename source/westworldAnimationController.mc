@@ -4,6 +4,7 @@ using Toybox.Time;
 using Toybox.Time.Gregorian;
 using Toybox.ActivityMonitor as ActMon;
 using Toybox.Activity as Act;
+using Toybox.Weather as Weather;
 
 class RehoboamAnimationController {
     private var _animation;
@@ -302,10 +303,40 @@ class RehoboamAnimationController {
         dc.clear();
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         var height = dc.getHeight();
-        var height_icons = height / 1.6;
-        drawBattery(dc, font_icons_str, height_icons, 2.2);
-        drawHeart(dc, font_icons_str, height_icons, 1.8);
+        var height_icons = height / 1.8;
+        drawWeather(dc, font_icons_str, height_icons, 2.75);
+        drawBattery(dc, font_icons_str, height_icons, 2);
+        drawHeart(dc, font_icons_str, height_icons, 1.55);
 
+    }
+
+    function drawWeather(dc, font_icons_str, height_icons, rate_width) {
+        var weather = getWeather();
+        var temperature = weather.temperature;
+        var condition = weather.condition;
+        var font_weather = WatchUi.loadResource(Rez.Fonts.font_weather);
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        var x_weather_position = width / rate_width;
+        //var heartRate = getHeartRate();
+        if (condition == 0){ //Meteo is clear
+            dc.drawText(x_weather_position, height_icons -5 , font_weather, "T",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
+        if (condition == 0){ //Meteo is clear
+            dc.drawText(x_weather_position, height_icons -5 , font_weather, "T",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
+        
+        /*
+        dc.drawText(x_weather_position, height_icons + +20 ,font_icons_str , heartRate,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        */
+    }
+
+    function getWeather() {
+        var weather = Weather.getCurrentConditions();
+        return weather;
     }
 
     function drawHeart(dc, font_icons_str, height_icons, rate_width) {
