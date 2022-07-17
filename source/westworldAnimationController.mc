@@ -6,8 +6,8 @@ class RehoboamAnimationController {
     private var _timeLayer;
     private var _dateLayer;
     private var _cityLayer;
-    private var _downBarLayer;
-    private var _drawLayer;
+    //private var _downBarLayer;
+    //private var _drawLayer;
     private var _batteryLayer;
     private var _iconLayer;
     private var _playing;
@@ -44,7 +44,7 @@ class RehoboamAnimationController {
             _timeLayer = _layer_builder.buildTimeLayer();
             _dateLayer = _layer_builder.buildDateLayer();
             _cityLayer = _layer_builder.buildCityLayer();
-            _downBarLayer = _layer_builder.buildDownBarLayer();
+            //_downBarLayer = _layer_builder.buildDownBarLayer();
             //_drawLayer = _layer_builder.buildDrawLayer();
             _batteryLayer = _layer_builder.buildBatteryLayer();
             _iconLayer = _layer_builder.buildIconLayer();
@@ -52,7 +52,7 @@ class RehoboamAnimationController {
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
-            _view.addLayer(_downBarLayer);
+            //_view.addLayer(_downBarLayer);
             //_view.addLayer(_drawLayer);
             _view.addLayer(_batteryLayer);
             _view.addLayer(_iconLayer);
@@ -67,7 +67,7 @@ class RehoboamAnimationController {
         _dateLayer = null;
         _cityLayer = null;
         //_drawLayer = null;
-        _downBarLayer = null;
+        //_downBarLayer = null;
         _batteryLayer = null;
         _iconLayer = null;
     }
@@ -81,7 +81,7 @@ class RehoboamAnimationController {
         _view.addLayer(_timeLayer);
         _view.addLayer(_dateLayer);
         _view.addLayer(_cityLayer);
-        _view.addLayer(_downBarLayer);
+        //_view.addLayer(_downBarLayer);
         //_view.addLayer(_drawLayer);
         _view.addLayer(_batteryLayer);
         _view.addLayer(_iconLayer);
@@ -106,7 +106,7 @@ class RehoboamAnimationController {
             _view.addLayer(_timeLayer);
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
-            _view.addLayer(_downBarLayer);
+            //_view.addLayer(_downBarLayer);
             //_view.addLayer(_drawLayer);
             _view.addLayer(_batteryLayer);
             _view.addLayer(_iconLayer);
@@ -127,7 +127,7 @@ class RehoboamAnimationController {
         _drawer.drawTime(_timeLayer);
         _drawer.drawDate(_dateLayer);
         _drawer.drawCity(_cityLayer);
-        _drawer.drawDownBar(_downBarLayer);
+        //_drawer.drawDownBar(_downBarLayer);
         //_drawer.drawLines(_drawLayer);
         _drawer.drawHealthStatus(_batteryLayer);
         _drawer.drawWeather(_iconLayer);
