@@ -45,7 +45,7 @@ class RehoboamAnimationController {
             _dateLayer = _layer_builder.buildDateLayer();
             _cityLayer = _layer_builder.buildCityLayer();
             _downBarLayer = _layer_builder.buildDownBarLayer();
-            _drawLayer = _layer_builder.buildDrawLayer();
+            //_drawLayer = _layer_builder.buildDrawLayer();
             _batteryLayer = _layer_builder.buildBatteryLayer();
             _iconLayer = _layer_builder.buildIconLayer();
             _view.addLayer(_animation);
@@ -53,7 +53,7 @@ class RehoboamAnimationController {
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
             _view.addLayer(_downBarLayer);
-            _view.addLayer(_drawLayer);
+            //_view.addLayer(_drawLayer);
             _view.addLayer(_batteryLayer);
             _view.addLayer(_iconLayer);
         }
@@ -66,6 +66,7 @@ class RehoboamAnimationController {
         _timeLayer = null;
         _dateLayer = null;
         _cityLayer = null;
+        //_drawLayer = null;
         _downBarLayer = null;
         _batteryLayer = null;
         _iconLayer = null;
@@ -81,7 +82,7 @@ class RehoboamAnimationController {
         _view.addLayer(_dateLayer);
         _view.addLayer(_cityLayer);
         _view.addLayer(_downBarLayer);
-        _view.addLayer(_drawLayer);
+        //_view.addLayer(_drawLayer);
         _view.addLayer(_batteryLayer);
         _view.addLayer(_iconLayer);
     }
@@ -106,7 +107,7 @@ class RehoboamAnimationController {
             _view.addLayer(_dateLayer);
             _view.addLayer(_cityLayer);
             _view.addLayer(_downBarLayer);
-            _view.addLayer(_drawLayer);
+            //_view.addLayer(_drawLayer);
             _view.addLayer(_batteryLayer);
             _view.addLayer(_iconLayer);
             _animation.play({:delegate => _delegator});
@@ -127,7 +128,7 @@ class RehoboamAnimationController {
         _drawer.drawDate(_dateLayer);
         _drawer.drawCity(_cityLayer);
         _drawer.drawDownBar(_downBarLayer);
-        _drawer.drawLines(_drawLayer);
+        //_drawer.drawLines(_drawLayer);
         _drawer.drawHealthStatus(_batteryLayer);
         _drawer.drawIcon(_iconLayer);
     }
