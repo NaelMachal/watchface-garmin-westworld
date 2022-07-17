@@ -13,7 +13,7 @@ class WestworldDrawer {
     }
 
     function drawIcon(_iconLayer) {
-        var image = WatchUi.loadResource(Rez.Drawables.WWIcon);
+        //var image = WatchUi.loadResource(Rez.Drawables.WWIcon);
         var dc = _iconLayer.getDc();
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
         dc.clear();
@@ -22,7 +22,7 @@ class WestworldDrawer {
         var height = dc.getHeight();
         var x_icon_position = width / 2 - 16;
         var height_icon = height / 2;
-        dc.drawBitmap( x_icon_position, height_icon, image );
+        //dc.drawBitmap( x_icon_position, height_icon, image );
     }
 
     function drawHealthStatus(_batteryLayer) {
@@ -33,10 +33,36 @@ class WestworldDrawer {
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         var height = dc.getHeight();
         var height_icons = height / 1.8;
-        drawWeather(dc, font_icons_str, height_icons, 2.75);
+        //drawWeather(dc, font_icons_str, height_icons, 2.75);
+        drawDistance(dc, font_icons_str, height_icons, 2.75);
         drawBattery(dc, font_icons_str, height_icons, 2);
         drawHeart(dc, font_icons_str, height_icons, 1.55);
+    }
 
+    function drawDistance(dc, font_icons_str, height_icons, rate_width) {
+        var font_steps = WatchUi.loadResource(Rez.Fonts.font_steps);
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        var x_heart_position = width / rate_width;
+        var distance = getCurrentDistance();
+        dc.drawText(x_heart_position, height_icons -5 , font_steps, "a",
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+
+        dc.drawText(x_heart_position, height_icons +20 ,font_icons_str , distance,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    }
+
+    function getCurrentDistance() {
+        var distance;
+        distance = ActMon.getInfo().distance;
+        if(distance!=null) {
+            distance = distance / 100000;
+            distance = distance.format("%0.1f");
+        }
+        else{
+            distance = "--";
+        }
+        return distance;
     }
 
     function drawWeather(dc, font_icons_str, height_icons, rate_width) {
