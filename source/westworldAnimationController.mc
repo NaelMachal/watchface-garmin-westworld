@@ -130,7 +130,7 @@ class RehoboamAnimationController {
         _drawer.drawDownBar(_downBarLayer);
         //_drawer.drawLines(_drawLayer);
         _drawer.drawHealthStatus(_batteryLayer);
-        _drawer.drawIcon(_iconLayer);
+        _drawer.drawWeather(_iconLayer);
     }
 
     

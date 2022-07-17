@@ -7,21 +7,75 @@ using Toybox.Weather as Weather;
 
 class WestworldDrawer {
     private var _rate_x_start;
+    private var _dictionnary_weather;
+    private var _dictionnary_key_weather;
+        
 
     function initialize()  {
         _rate_x_start = 5;
+        _dictionnary_weather = {
+            0 => "clear",
+            1 => "partially_cloudy",
+            2 => "cloudy",
+            3 => "rainy",
+            4 => "snow",
+            5 => "windy",
+            6 => "storms",
+            8 => "fog",
+            11 => "light_rain",
+            12 => "storms",
+            13 => "light_rain",
+            14 => "light_rain",
+            15 => "rainy",
+            16 => "snow",
+            17 => "snow",
+            18 => "snow",
+            19 => "snow",
+            20 => "cloudy",
+            21 => "snow",
+            22 => "partially_cloudy",
+            23 => "clear",
+            24 => "light_rain",
+            25 => "rainy",
+            26 => "rainy",
+            27 => "light_rain",
+            28 => "storms",
+            33 => "fog",
+            34 => "snow",
+            43 => "snow",
+            44 => "snow",
+            45 => "light_rain",
+            49 => "rainy",
+            51 => "snow",
+            52 => "cloudy"
+        };
+
+        _dictionnary_key_weather = {
+            "clear" => "D",
+            "partially_cloudy" => "B",
+            "cloudy" => "A",
+            "rainy" => "y",
+            "light_rain" => "z",
+            "snow" => "u",
+            "windy" => "c",
+            "fog" => "f",
+            "storms" => "r",
+            "unknown" => "o"
+        };
     }
 
-    function drawIcon(_iconLayer) {
+    function drawWeather(_iconLayer) {
         //var image = WatchUi.loadResource(Rez.Drawables.WWIcon);
+        var font_icons_str = WatchUi.loadResource(Rez.Fonts.font_icons_str);
         var dc = _iconLayer.getDc();
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_TRANSPARENT);
         dc.clear();
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         var width = dc.getWidth();
         var height = dc.getHeight();
-        var x_icon_position = width / 2 - 16;
-        var height_icon = height / 2;
+        var height_icon = height / 1.7;
+        drawCurrentWeather(dc, font_icons_str, height_icon, 2.75);
+        drawForecastWeather(dc, font_icons_str, height_icon, [2, 1.55]);
         //dc.drawBitmap( x_icon_position, height_icon, image );
     }
 
@@ -65,7 +119,59 @@ class WestworldDrawer {
         return distance;
     }
 
-    function drawWeather(dc, font_icons_str, height_icons, rate_width) {
+    function drawForecastWeather(dc, font_icons_str, height_icons, rate_width){
+        var weather;
+        var time;
+        var x_weather_position;
+        var font_weather = WatchUi.loadResource(Rez.Fonts.font_weather);
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        var forecast_weather = getForecastWeather();
+        var condition_key;
+        for ( var i = 0; i < forecast_weather.size(); i += 1 ) {
+            x_weather_position = width / rate_width[i];
+            weather = forecast_weather[i];
+            if (_dictionnary_weather.hasKey(weather["condition"])){
+                System.println(_dictionnary_weather[weather["condition"]]);
+                condition_key = _dictionnary_key_weather[_dictionnary_weather[weather["condition"]]];
+            }
+            else {
+                condition_key = _dictionnary_key_weather["unknown"];
+            }
+            dc.drawText(x_weather_position, height_icons -5 , font_weather, condition_key,
+                    Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            dc.drawText(x_weather_position, height_icons + +20 ,font_icons_str , weather["temperature"],
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        }
+    }
+    
+
+    function getForecastWeather(){
+        var results = new [2];
+        var forecast_weather = Weather.getHourlyForecast();   
+        if (forecast_weather != null and forecast_weather.size()>5) {
+            /*
+            for( var i = 0; i < forecast_weather.size(); i += 1 ) {
+                weather = forecast_weather[i];
+                time = weather.forecastTime;
+                var info_time = Gregorian.info(time, Time.FORMAT_MEDIUM);
+                var hour = info_time.hour.format("%02d");
+                System.println(hour);
+            }
+            */
+            var weather_h3 = forecast_weather[2];
+            var weather_h6 = forecast_weather[5];
+            results[0] = {"condition" => weather_h3.condition, "temperature" => weather_h3.temperature.format("%02d")};
+            results[1] = {"condition" => weather_h6.condition, "temperature" => weather_h6.temperature.format("%02d")};
+        }
+        else {
+            results[0] = {"condition" => 99, "temperature" => "--"};
+            results[1] = {"condition" => 99, "temperature" => "--"};
+        }
+        return results;
+    }
+
+    function drawCurrentWeather(dc, font_icons_str, height_icons, rate_width) {
         var temperature;
         var condition;
         var weather = getWeather();
@@ -79,7 +185,7 @@ class WestworldDrawer {
             var clear = [0, 23];
             var rainy = [3,15,25,26, 49];
             var partially_cloudy = [1, 22];
-            var cloudy = [2,20,52, 22];
+            var cloudy = [2,20,52];
             var snow = [4, 16, 17, 18, 19, 21, 34,43, 44, 51];
             var windy = [5];
             var storms = [6, 12, 28];
@@ -195,15 +301,6 @@ class WestworldDrawer {
         var heartRate;
         if (ActMon has :getHeartRateHistory) {
             heartRate = Act.getActivityInfo().currentHeartRate;
-            /*
-            if(heartRate==null) {
-                var HRH=ActMon.getHeartRateHistory(1, true);
-                var HRS=HRH.next();
-                if(HRS!=null && HRS.heartRate!= ActMon.INVALID_HR_SAMPLE){
-                    heartRate = HRS.heartRate;
-                }
-            }
-            */
             if(heartRate!=null) {
                 heartRate = heartRate.toString();
             }
