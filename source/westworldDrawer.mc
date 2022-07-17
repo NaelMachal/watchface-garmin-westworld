@@ -56,7 +56,7 @@ class WestworldDrawer {
         var distance;
         distance = ActMon.getInfo().distance;
         if(distance!=null) {
-            distance = distance / 100000;
+            distance = (distance / 100000.0);
             distance = distance.format("%0.1f");
         }
         else{
