@@ -169,6 +169,7 @@ class WestworldDrawer {
         var heartRate;
         if (ActMon has :getHeartRateHistory) {
             heartRate = Act.getActivityInfo().currentHeartRate;
+            /*
             if(heartRate==null) {
                 var HRH=ActMon.getHeartRateHistory(1, true);
                 var HRS=HRH.next();
@@ -176,6 +177,7 @@ class WestworldDrawer {
                     heartRate = HRS.heartRate;
                 }
             }
+            */
             if(heartRate!=null) {
                 heartRate = heartRate.toString();
             }
