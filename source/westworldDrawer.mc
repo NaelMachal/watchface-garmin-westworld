@@ -132,7 +132,6 @@ class WestworldDrawer {
             x_weather_position = width / rate_width[i];
             weather = forecast_weather[i];
             if (_dictionnary_weather.hasKey(weather["condition"])){
-                System.println(_dictionnary_weather[weather["condition"]]);
                 condition_key = _dictionnary_key_weather[_dictionnary_weather[weather["condition"]]];
             }
             else {
@@ -150,15 +149,6 @@ class WestworldDrawer {
         var results = new [2];
         var forecast_weather = Weather.getHourlyForecast();   
         if (forecast_weather != null and forecast_weather.size()>5) {
-            /*
-            for( var i = 0; i < forecast_weather.size(); i += 1 ) {
-                weather = forecast_weather[i];
-                time = weather.forecastTime;
-                var info_time = Gregorian.info(time, Time.FORMAT_MEDIUM);
-                var hour = info_time.hour.format("%02d");
-                System.println(hour);
-            }
-            */
             var weather_h3 = forecast_weather[2];
             var weather_h6 = forecast_weather[5];
             results[0] = {"condition" => weather_h3.condition, "temperature" => weather_h3.temperature.format("%02d")};
@@ -179,74 +169,30 @@ class WestworldDrawer {
         var width = dc.getWidth();
         var height = dc.getHeight();
         var x_weather_position = width / rate_width;
-        if (weather != null) {
-            temperature = weather.temperature.format("%02d");
-            condition = weather.condition;
-            var clear = [0, 23];
-            var rainy = [3,15,25,26, 49];
-            var partially_cloudy = [1, 22];
-            var cloudy = [2,20,52];
-            var snow = [4, 16, 17, 18, 19, 21, 34,43, 44, 51];
-            var windy = [5];
-            var storms = [6, 12, 28];
-            var light_rain = [11, 13, 14, 24, 27, 45];
-            var fog = [8, 33];
-            if (clear.indexOf(condition) != -1){ //Weather is clear
-            dc.drawText(x_weather_position, height_icons -5 , font_weather, "D",
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            else if (partially_cloudy.indexOf(condition) != -1){ //Weather is partially clear or partially cloudy
-                dc.drawText(x_weather_position, height_icons -5 , font_weather, "B",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            else if (cloudy.indexOf(condition) != -1){ //Weather is Cloudy
-                dc.drawText(x_weather_position, height_icons -5 , font_weather, "A",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            else if (rainy.indexOf(condition) != -1){ //Weather is rainy
-                dc.drawText(x_weather_position, height_icons -5 , font_weather, "y",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            else if (light_rain.indexOf(condition) != -1){ //Weather is  light rainy
-                dc.drawText(x_weather_position, height_icons -5 , font_weather, "z",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            else if (snow.indexOf(condition) != -1){ //Weather is snow
-                dc.drawText(x_weather_position, height_icons -5 , font_weather, "u",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            else if (windy.indexOf(condition) != -1){ //Weather is windy
-                dc.drawText(x_weather_position, height_icons -5 , font_weather, "c",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            else if (fog.indexOf(condition) != -1){ //Weather is fog
-                dc.drawText(x_weather_position, height_icons -5 , font_weather, "f",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            else if (storms.indexOf(condition) != -1){ //Weather is storm
-                dc.drawText(x_weather_position, height_icons -5 , font_weather, "r",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            else { //Unknown
-                dc.drawText(x_weather_position, height_icons -5 , font_weather, "o",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            }
-            dc.drawText(x_weather_position, height_icons + +20 ,font_icons_str , temperature,
-            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        var condition_key;
+        if (_dictionnary_weather.hasKey(weather["condition"])){
+            condition_key = _dictionnary_key_weather[_dictionnary_weather[weather["condition"]]];
         }
         else {
-            dc.drawText(x_weather_position, height_icons -5 , font_weather, "o",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
-            dc.drawText(x_weather_position, height_icons + +20 ,font_icons_str , "--",
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+            condition_key = _dictionnary_key_weather["unknown"];
         }
-        
+        dc.drawText(x_weather_position, height_icons -5 , font_weather, condition_key,
+                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(x_weather_position, height_icons + +20 ,font_icons_str , weather["temperature"],
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         
     }
 
     function getWeather() {
+        var results;
         var weather = Weather.getCurrentConditions();
-        return weather;
+        if (weather != null) {
+            results = {"condition" => weather.condition, "temperature" => weather.temperature.format("%02d")};
+        }
+        else{
+            results = {"condition" => 99, "temperature" => "--"};
+        }
+        return results;
     }
 
     function drawHeart(dc, font_icons_str, height_icons, rate_width) {
